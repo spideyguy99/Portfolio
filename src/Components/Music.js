@@ -19,12 +19,18 @@ const useStyles = makeStyles(theme => ({
     },
     gridList: {
         width: 800,
-        height: "100vh",
+        height: "90vh",
         verticalAlign: "text-top"
     },
     icon: {
         color: 'rgba(255, 255, 255, 0.54)',
     },
+    text: {
+        color: "#e8eaf6",
+        borderRadius: 13,
+        boxShadow: '1px 2px 4px 10 rgba(138, 148, 159, 0.2)',
+        backgroundColor:"#121212",
+    }
 }));
 
 export default function Music() {
@@ -32,7 +38,9 @@ export default function Music() {
 
     return (
         <div className={classes.root}>
-            <Typography >My Favorite Music</Typography>
+            <Typography className={classes.text} variant={"h5"}>
+                -My Favorite Music-
+            </Typography>
             <GridList cellHeight={250} className={classes.gridList} cols={3}>
                 {MusicList.map(tile => (
                     <GridListTile key={tile.img} cols={tile.cols || 1}>

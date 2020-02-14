@@ -2,31 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3d53c4db-106d-4ae3-b263-2fbb3fb353a0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/Data/HomeworkData.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/Data/MusicData.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/Games.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/Home.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/Homework.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/Images/currents.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/Images/day.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/Images/doom.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/Images/flower.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/Images/graduation.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/Images/internet.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/Images/mac.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/Images/oddments.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/Images/teeth.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/Media.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/MediaCard.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/Movies.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/Music.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/Resume.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Music.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Music.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +72,7 @@
       <option name="presentableId" value="Default" />
       <updated>1581540485294</updated>
       <workItem from="1581540486616" duration="14609000" />
-      <workItem from="1581623124867" duration="5364000" />
+      <workItem from="1581623124867" duration="6271000" />
     </task>
     <servers />
   </component>
