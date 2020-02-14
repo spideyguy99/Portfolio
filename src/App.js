@@ -1,25 +1,97 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link,
+} from "react-router-dom";
+
+//material ui imports
+import { makeStyles } from '@material-ui/core/styles';
+import AppBar from '@material-ui/core/AppBar';
+import Toolbar from '@material-ui/core/Toolbar';
+import Typography from '@material-ui/core/Typography';
+import Button from '@material-ui/core/Button';
+import IconButton from '@material-ui/core/IconButton';
+import GitHubIcon from '@material-ui/icons/GitHub';
+import Container from '@material-ui/core/Container';
+
+//page imports
+import Home from "./Components/Home";
+import Resume from "./Components/Resume";
+import Media from "./Components/Media";
+import Music from "./Components/Music";
+import Movies from "./Components/Movies";
+import Games from "./Components/Games";
+
+const useStyles = makeStyles(theme => ({
+    root: {
+        flexGrow: 1,
+        backgroundColor: '#121212'
+    },
+    menuButton: {
+        marginRight: theme.spacing(2),
+        textDecoration: "none",
+        backgroundColor: "#e8eaf6"
+    },
+    title: {
+        flexGrow: 1,
+    },
+}));
 
 function App() {
+
+    const classes = useStyles();
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <Router>
+          <div className={classes.root}>
+              <nav>
+                  <AppBar position={"static"}>
+                      <Toolbar>
+
+                          <Typography variant={"h4"} className={classes.title}>
+                              Noah James Furniss Portfolio
+                          </Typography>
+
+                          <Link to={"/"}>
+                              <Button variant={"contained"} className={classes.menuButton}>
+                                  Home
+                              </Button>
+                          </Link>
+
+                          <Link to={"/resume"}>
+                              <Button variant={"contained"} className={classes.menuButton}>
+                                  Resume
+                              </Button>
+                          </Link>
+
+                          <Link to={"/media"}>
+                            <Button variant={"contained"} className={classes.menuButton}>
+                                  Media
+                            </Button>
+                          </Link>
+
+                          <IconButton aria-label="GitHub" href="https://github.com/spideyguy99">
+                              <GitHubIcon style={{color: "#e8eaf6"}}/>
+                          </IconButton>
+
+                      </Toolbar>
+                  </AppBar>
+              </nav>
+              <Container maxWidth={"md"} style={{ backgroundColor: "#212121", height: '100vh' }}>
+                  <Switch>
+                      <Route path={"/"} component={Home} exact />
+                      <Route path={"/resume"} component={Resume} />
+                      <Route path={"/media"} component={Media} />
+                      <Route path={"/media/music"} component={Music} />
+                      <Route path={"/media/movies"} component={Movies} />
+                      <Route path={"/media/games"} component={Games} />
+                  </Switch>
+              </Container>
+          </div>
+      </Router>
   );
 }
 
