@@ -15,13 +15,14 @@ const useStyles = makeStyles({
     root: {
         maxWidth: 200,
         backgroundColor: "#616161",
-        color: "#eceff1"
+        color: "#eceff1",
     },
     media: {
         height: 140,
     },
     card: {
-        padding: 10,
+        display: "flex",
+        flexWrap: "wrap"
     },
 });
 

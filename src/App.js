@@ -55,7 +55,9 @@ function App() {
                       <Toolbar>
 
                           <Typography variant={"h4"} className={classes.title}>
-                              My Portfolio
+                              <Link to={"/"} style={{color: "white", textDecoration: "none"}}>
+                                  My Portfolio
+                              </Link>
                               <IconButton aria-label="GitHub" href="https://www.instagram.com/https.noah99/" target={"_blank"}>
                                   <InstagramIcon style={{color: "#e8eaf6"}}/>
                               </IconButton>
@@ -68,12 +70,6 @@ function App() {
                                   <LinkedInIcon style={{color: "#e8eaf6"}}/>
                               </IconButton>
                           </Typography>
-
-                          <Link to={"/"}>
-                              <Button variant={"contained"} className={classes.menuButton}>
-                                  Home
-                              </Button>
-                          </Link>
 
                           <Link to={"/resume"}>
                               <Button variant={"contained"} className={classes.menuButton}>
