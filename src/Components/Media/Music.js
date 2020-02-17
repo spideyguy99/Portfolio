@@ -9,12 +9,13 @@ import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 
 //page imports
-import MoviesList from "./Data/MoviesData";
+import MusicList from "../Data/MusicData";
 
 const useStyles = makeStyles({
     root: {
-        maxWidth: 200,
-        backgroundColor: "#616161",
+        width: 250,
+        minHeight: 250,
+        backgroundColor: "#455a64",
         color: "#eceff1"
     },
     media: {
@@ -23,35 +24,47 @@ const useStyles = makeStyles({
     card: {
         padding: 10,
         display: "flex",
-        flexWrap: "wrap"
+        flexWrap: "wrap",
+        justifyContent: "center",
     },
+    cardButton: {
+        color: "#263238"
+    }
 });
 
-export default function MoviesCard() {
+export default function MusicCard() {
     const classes = useStyles();
 
     return (
         <div className={classes.card}>
-            {MoviesList.map(item => (
+            {MusicList.map(item => (
                 <Card className={classes.root}>
-                    <CardActionArea  href={item.wiki} target={"_blank"}>
+                    <CardActionArea href={item.youTube} target={"_blank"}>
                         <CardMedia
                             className={classes.media}
                             image={item.img}
-                            title={item.name}
+                            title={item.artist}
                         />
                         <CardContent>
                             <Typography gutterBottom variant="h5" component="h2">
-                                {item.name}
+                                {item.artist}
                             </Typography>
                             <Typography variant="subtitle2" >
                                 {item.genre}
                             </Typography>
                             <Typography variant="body2" color="textSecondary" component="p">
-                                Directed By: {item.director}
+                                Lead Singer: {item.leadSinger}
                             </Typography>
                         </CardContent>
                     </CardActionArea>
+                    <CardActions>
+                        <Button variant={"contained"} size="small" target={"_blank"} href={item.spot}>
+                            Album
+                        </Button>
+                        <Button variant={"contained"} size="small" target={"_blank"} href={item.wiki}>
+                            Wiki
+                        </Button>
+                    </CardActions>
                 </Card>
             ))}
         </div>

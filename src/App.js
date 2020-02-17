@@ -23,10 +23,10 @@ import Container from '@material-ui/core/Container';
 //page imports
 import Home from "./Components/Home";
 import Resume from "./Components/Resume";
-import Media from "./Components/Media";
-import Music from "./Components/Music";
-import Movies from "./Components/Movies";
-import Games from "./Components/Games";
+import Index from "./Components/Media/Index";
+import Music from "./Components/Media/Music";
+import Movies from "./Components/Media/Movies";
+import Games from "./Components/Media/Games";
 
 const useStyles = makeStyles(theme => ({
     root: {
@@ -94,7 +94,7 @@ function App() {
                   <Switch>
                       <Route path={"/"} component={Home} exact />
                       <Route path={"/resume"} component={Resume} />
-                      <Route path={"/media"} component={Media} />
+                      <Route path={"/media"} component={Index} />
                       <Route path={"/media/music"} component={Music} />
                       <Route path={"/media/movies"} component={Movies} />
                       <Route path={"/media/games"} component={Games} />
