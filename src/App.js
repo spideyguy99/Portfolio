@@ -21,12 +21,9 @@ import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import Container from '@material-ui/core/Container';
 
 //page imports
-import Home from "./Components/Home";
 import Resume from "./Components/Resume";
 import Index from "./Components/AboutMe/Index";
-import Music from "./Components/AboutMe/Music";
-import Movies from "./Components/AboutMe/Movies";
-import Games from "./Components/AboutMe/Games";
+import Homework from "./Components/Homework/Home";
 
 const useStyles = makeStyles(theme => ({
     root: {
@@ -71,16 +68,22 @@ function App() {
                               </IconButton>
                           </Typography>
 
+                          <Link to={"/"}>
+                              <Button variant={"contained"} className={classes.menuButton}>
+                                  About Me
+                              </Button>
+                          </Link>
+
                           <Link to={"/resume"}>
                               <Button variant={"contained"} className={classes.menuButton}>
                                   Resume
                               </Button>
                           </Link>
 
-                          <Link to={"/about"}>
-                            <Button variant={"contained"} className={classes.menuButton}>
-                                  About Me
-                            </Button>
+                          <Link to={"/homework"}>
+                              <Button variant={"contained"} className={classes.menuButton}>
+                                  Homework
+                              </Button>
                           </Link>
 
                           <IconButton aria-label="GitHub" href="https://github.com/spideyguy99" target={"_blank"}>
@@ -92,12 +95,9 @@ function App() {
               </nav>
               <Container maxWidth={"md"} style={{ backgroundColor: "#212121", minHeight: '100vh' }}>
                   <Switch>
-                      <Route path={"/"} component={Home} exact />
+                      <Route path={"/"} component={Index} exact />
                       <Route path={"/resume"} component={Resume} />
-                      <Route path={"/about"} component={Index} />
-                      <Route path={"/about/music"} component={Music} />
-                      <Route path={"/about/movies"} component={Movies} />
-                      <Route path={"/about/games"} component={Games} />
+                      <Route path={"/homework"} component={Homework} />
                   </Switch>
               </Container>
           </div>

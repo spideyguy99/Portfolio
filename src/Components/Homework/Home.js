@@ -1,7 +1,7 @@
 import React from "react";
-import "../App.css";
+import "../../App.css";
 
-import Homework413 from './Data/HomeworkData';
+import Homework413 from '../Data/HomeworkData';
 import Homework from "./Homework";
 
 export default function Home () {

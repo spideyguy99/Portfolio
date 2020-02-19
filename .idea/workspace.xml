@@ -2,20 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3d53c4db-106d-4ae3-b263-2fbb3fb353a0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Components/AboutMe/Carousel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/Images/banner.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/Images/indy.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/Images/portrait.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/Images/profile.jpeg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Media/Games.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/AboutMe/Games.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Media/Index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/AboutMe/Index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Media/Movies.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/AboutMe/Movies.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Media/Music.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/AboutMe/Music.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Media/mediaHome.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/AboutMe/mediaHome.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/AboutMe/Games.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/AboutMe/Games.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/AboutMe/Index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/AboutMe/Index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/AboutMe/Movies.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/AboutMe/Movies.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/AboutMe/Music.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/AboutMe/Music.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Homework/Home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Homework.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Homework/Homework.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,6 +49,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/Components/Homework" />
       <recent name="C:\Users\Noah\Desktop\Portfolio\src\Components\Media" />
       <recent name="$PROJECT_DIR$/src/Components/Data" />
     </key>

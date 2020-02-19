@@ -45,22 +45,22 @@ export default function Index () {
                 <div className={classes.root}>
                     <nav>
                         <Paper className={classes.paper}>
-                        <Link to={`/about`}>
+                        <Link to={`/`}>
                             <IconButton aria-label="About Me">
                                 <PersonIcon className={classes.icon} />
                             </IconButton>
                         </Link>
-                        <Link to={`/about/music`}>
+                        <Link to={`/music`}>
                             <IconButton aria-label="Music">
                                 <LibraryMusicIcon className={classes.icon}/>
                             </IconButton>
                         </Link>
-                        <Link to={`/about/games`}>
+                        <Link to={`/games`}>
                             <IconButton aria-label="Games">
                                 <SportsEsportsIcon className={classes.icon}/>
                             </IconButton>
                         </Link>
-                        <Link to={`/about/movies`}>
+                        <Link to={`/movies`}>
                             <IconButton aria-label="Shows">
                                 <TheatersIcon className={classes.icon}/>
                             </IconButton>
@@ -68,10 +68,10 @@ export default function Index () {
                         </Paper>
                     </nav>
                         <Switch>
-                            <Route path={"/about"}  exact component={mediaHome} />
-                            <Route path={"/about/music"} component={Music} />
-                            <Route path={"/about/movies"} component={Movies} />
-                            <Route path={"/about/games"} component={Games} />
+                            <Route path={"/"}  exact component={mediaHome} />
+                            <Route path={"/music"} component={Music} />
+                            <Route path={"/movies"} component={Movies} />
+                            <Route path={"/games"} component={Games} />
                         </Switch>
                 </div>
             </Router>
