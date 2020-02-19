@@ -6,52 +6,52 @@ import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import Link from '@material-ui/core/Link';
-import Grid from '@material-ui/core/Grid';
 
 const useStyles = makeStyles(theme =>({
     card: {
         display: 'flex',
-        width: 313,
-        height: 105,
-        borderRadius: 13,
-        boxShadow: '1px 2px 4px 10 rgba(138, 148, 159, 0.2)',
-        backgroundColor:"#607d8b",
+        flexWrap: "wrap",
+        justifyContent: "space-around",
+        backgroundColor:"#263238",
+        color: "#eceff1",
+        marginBottom: 20,
+        marginLeft: 20,
+        marginRight: 20,
+        maxWidth: 200,
     },
     action: {
+        display: "flex",
         alignSelf: "flex-end",
     },
     root: {
-        flexGrow: 1
-    }
+        flexGrow: 1,
+        display: 'flex',
+        flexWrap: "wrap",
+    },
 }));
 
 export default function Homework(props) {
     const classes = useStyles();
 
     return (
-        <div>
-            <Grid container spacing={3} className={classes.root}>
-                <Grid item>
-
-                    <Card className={classes.card}>
-                        <CardContent>
-                            <Typography variant="h5">
-                                {props.name}
-                            </Typography>
-                            <Typography variant="body2" component="p">
-                                {props.sub}
-                            </Typography>
-                        </CardContent>
-                        <CardActions className={classes.action}>
-                            <Link href={props.url}>
-                                <Button size="small" variant={"contained"} style={{backgroundColor:"#263238", color: "#eceff1"}}>
-                                    View on Netlify
-                                </Button>
-                            </Link>
-                        </CardActions>
-                    </Card>
-                </Grid>
-            </Grid>
+        <div className={classes.root}>
+            <Card className={classes.card} elevation={4}>
+                <CardContent>
+                    <Typography variant="h5">
+                        {props.name}
+                    </Typography>
+                    <Typography variant="body2" component="p">
+                        {props.sub}
+                    </Typography>
+                </CardContent>
+                <CardActions className={classes.action}>
+                    <Link href={props.url}>
+                        <Button size="small" variant={"contained"} style={{backgroundColor:"#455a64", color: "#eceff1"}}>
+                            View on Netlify
+                        </Button>
+                    </Link>
+                </CardActions>
+            </Card>
         </div>
     );
 }

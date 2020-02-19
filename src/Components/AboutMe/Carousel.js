@@ -8,13 +8,28 @@ import { Carousel } from 'react-responsive-carousel';
 
      const indy = require('../Images/indy.jpeg');
 
+     const noahUlt = require('../Images/noahUlt.jpg');
+
+     const regatta = require('../Images/regatta.jpg');
+
+     const team = require('../Images/tem10.jpg');
+
         return (
             <Carousel>
-                <div style={{objectFit: "cover", height: 250}}>
+                <div>
                     <img src={indy} />
                 </div>
                 <div>
                     <img src={banner} />
+                </div>
+                <div>
+                    <img src={noahUlt}/>
+                </div>
+                <div>
+                    <img src={regatta}/>
+                </div>
+                <div>
+                    <img src={team}/>
                 </div>
             </Carousel>
         )}

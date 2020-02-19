@@ -82,7 +82,7 @@ function App() {
 
                           <Link to={"/homework"} style={{textDecoration: "none"}}>
                               <Button variant={"contained"} className={classes.menuButton}>
-                                  Homework
+                                  Course Work
                               </Button>
                           </Link>
 

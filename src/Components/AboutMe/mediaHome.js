@@ -69,13 +69,13 @@ export default function MediaCard() {
                             Some Fun Facts About Me!
                         </h3>
                     </div>
-                    <ol>
+                    <ul>
                         <li>I have a black belt</li>
                         <li>I am VP of the Ultimate Frisbee Club</li>
                         <li>I am currently working 2 jobs</li>
                         <li>I have marched on Lucas Oil</li>
                         <li>I participated in a research project</li>
-                    </ol>
+                    </ul>
                 </Paper>
                 <Paper className={classes.cardpaper}>
                     <h3>What is this website for?</h3>
