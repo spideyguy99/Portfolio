@@ -17,6 +17,7 @@ const useStyles = makeStyles({
         minHeight: 250,
         backgroundColor: "#455a64",
         color: "#eceff1",
+        marginBottom: 20
     },
     media: {
         height: 140,
@@ -25,7 +26,7 @@ const useStyles = makeStyles({
         padding: 10,
         display: "flex",
         flexWrap: "wrap",
-        justifyContent: "center",
+        justifyContent: "space-around",
     },
 });
 

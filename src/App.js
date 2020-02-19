@@ -23,10 +23,10 @@ import Container from '@material-ui/core/Container';
 //page imports
 import Home from "./Components/Home";
 import Resume from "./Components/Resume";
-import Index from "./Components/Media/Index";
-import Music from "./Components/Media/Music";
-import Movies from "./Components/Media/Movies";
-import Games from "./Components/Media/Games";
+import Index from "./Components/AboutMe/Index";
+import Music from "./Components/AboutMe/Music";
+import Movies from "./Components/AboutMe/Movies";
+import Games from "./Components/AboutMe/Games";
 
 const useStyles = makeStyles(theme => ({
     root: {
@@ -77,9 +77,9 @@ function App() {
                               </Button>
                           </Link>
 
-                          <Link to={"/media"}>
+                          <Link to={"/about"}>
                             <Button variant={"contained"} className={classes.menuButton}>
-                                  Media
+                                  About Me
                             </Button>
                           </Link>
 
@@ -94,10 +94,10 @@ function App() {
                   <Switch>
                       <Route path={"/"} component={Home} exact />
                       <Route path={"/resume"} component={Resume} />
-                      <Route path={"/media"} component={Index} />
-                      <Route path={"/media/music"} component={Music} />
-                      <Route path={"/media/movies"} component={Movies} />
-                      <Route path={"/media/games"} component={Games} />
+                      <Route path={"/about"} component={Index} />
+                      <Route path={"/about/music"} component={Music} />
+                      <Route path={"/about/movies"} component={Movies} />
+                      <Route path={"/about/games"} component={Games} />
                   </Switch>
               </Container>
           </div>
