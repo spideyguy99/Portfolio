@@ -68,19 +68,19 @@ function App() {
                               </IconButton>
                           </Typography>
 
-                          <Link to={"/"}>
+                          <Link to={"/"} style={{textDecoration: "none"}}>
                               <Button variant={"contained"} className={classes.menuButton}>
                                   About Me
                               </Button>
                           </Link>
 
-                          <Link to={"/resume"}>
+                          <Link to={"/resume"} style={{textDecoration: "none"}}>
                               <Button variant={"contained"} className={classes.menuButton}>
                                   Resume
                               </Button>
                           </Link>
 
-                          <Link to={"/homework"}>
+                          <Link to={"/homework"} style={{textDecoration: "none"}}>
                               <Button variant={"contained"} className={classes.menuButton}>
                                   Homework
                               </Button>

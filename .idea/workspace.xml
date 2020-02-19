@@ -4,12 +4,6 @@
     <list default="true" id="3d53c4db-106d-4ae3-b263-2fbb3fb353a0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/AboutMe/Games.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/AboutMe/Games.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/AboutMe/Index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/AboutMe/Index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/AboutMe/Movies.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/AboutMe/Movies.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/AboutMe/Music.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/AboutMe/Music.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Homework/Home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Homework.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Homework/Homework.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
