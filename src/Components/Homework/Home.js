@@ -7,9 +7,8 @@ import Paper from "@material-ui/core/Paper";
 import {makeStyles} from "@material-ui/core/styles";
 
 const useStyles = makeStyles(theme =>({
-
     cardpaper: {
-        backgroundColor: "#263238",
+        backgroundColor: "#37474f",
         color: "#eceff1",
         minWidth: 250,
         marginLeft: 20,
@@ -31,11 +30,16 @@ export default function Home () {
 
     return(
         <div>
+            <div style={{backgroundColor: "#212121", color: "#212121"}}>
+                Bumber
+            </div>
             <Paper className={classes.cardpaper}>
             <h2>Homework from CIT 41300 - Advanced Commercial Web Development</h2>
             All homeworks are posted to GitHub, and available to access through Netlify.
         </Paper>
-            {homework}
+            <div style={{display: "flex", flexWrap: "wrap", justifyContent: "space-around"}}>
+                {homework}
+            </div>
         </div>
     );
 }

@@ -14,7 +14,7 @@ const useStyles = makeStyles({
     root: {
         width: 250,
         minHeight: 250,
-        backgroundColor: "#263238",
+        backgroundColor: "#37474f",
         color: "#eceff1",
         marginBottom: 20
     },
@@ -28,7 +28,7 @@ const useStyles = makeStyles({
         justifyContent: "space-around",
     },
     cardpaper: {
-        backgroundColor: "#263238",
+        backgroundColor: "#37474f",
         color: "#eceff1",
         minWidth: 250,
         marginTop: 20,

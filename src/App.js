@@ -38,6 +38,9 @@ const useStyles = makeStyles(theme => ({
     title: {
         flexGrow: 1,
     },
+    appbar: {
+        backgroundColor: "#263238"
+    }
 }));
 
 function App() {
@@ -48,9 +51,8 @@ function App() {
       <Router>
           <div className={classes.root}>
               <nav>
-                  <AppBar position={"static"}>
+                  <AppBar position={"static"} className={classes.appbar}>
                       <Toolbar>
-
                           <Typography variant={"h4"} className={classes.title}>
                               <Link to={"/"} style={{color: "white", textDecoration: "none"}}>
                                   My Portfolio

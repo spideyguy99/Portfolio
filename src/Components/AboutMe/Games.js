@@ -16,7 +16,7 @@ const useStyles = makeStyles({
     root: {
         width: 250,
         minHeight: 250,
-        backgroundColor: "#263238",
+        backgroundColor: "#37474f",
         color: "#eceff1",
         marginBottom: 20
     },
@@ -30,7 +30,7 @@ const useStyles = makeStyles({
         justifyContent: "space-around",
     },
     cardpaper: {
-        backgroundColor: "#263238",
+        backgroundColor: "#37474f",
         color: "#eceff1",
         minWidth: 250,
         marginTop: 20,
@@ -50,7 +50,7 @@ export default function GamesCard() {
         <div>
             <Paper className={classes.cardpaper}>
                 <h2>My Favorite Games!</h2>
-                A top 9 list of my favorite Games! I am an avid PC gamer, but I don't limit myself to just that, I also play Switch, Playstation, and xBox. Click on the card to view the game on Steam, and the WIKI button in order to learn more about the game!
+                A top 9 list of my favorite Games! I am an avid PC gamer, but I don't limit myself to just that, I also play Switch, Playstation, and xBox. Click on the card to view the game on Steam!
             </Paper>
             <div className={classes.card}>
                 {GamesList.map(item => (
@@ -73,11 +73,6 @@ export default function GamesCard() {
                                 </Typography>
                             </CardContent>
                         </CardActionArea>
-                        <CardActions>
-                            <Button variant={"contained"} size="small" target={"_blank"} href={item.wiki} style={{backgroundColor:"#455a64", color: "#eceff1"}}>
-                                Wiki
-                            </Button>
-                        </CardActions>
                     </Card>
                 ))}
             </div>

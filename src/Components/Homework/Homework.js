@@ -12,19 +12,18 @@ const useStyles = makeStyles(theme =>({
         display: 'flex',
         flexWrap: "wrap",
         justifyContent: "space-around",
-        backgroundColor:"#263238",
+        backgroundColor:"#37474f",
         color: "#eceff1",
         marginBottom: 20,
-        marginLeft: 20,
-        marginRight: 20,
-        maxWidth: 200,
+        marginLeft: 40,
+        marginRight: 40,
+        maxWidth: 175,
     },
     action: {
         display: "flex",
         alignSelf: "flex-end",
     },
     root: {
-        flexGrow: 1,
         display: 'flex',
         flexWrap: "wrap",
     },
@@ -45,8 +44,8 @@ export default function Homework(props) {
                     </Typography>
                 </CardContent>
                 <CardActions className={classes.action}>
-                    <Link href={props.url}>
-                        <Button size="small" variant={"contained"} style={{backgroundColor:"#455a64", color: "#eceff1"}}>
+                    <Link href={props.url} target={"_blank"}>
+                        <Button size="small" variant={"contained"} style={{backgroundColor:"#546e7a", color: "#eceff1"}}>
                             View on Netlify
                         </Button>
                     </Link>

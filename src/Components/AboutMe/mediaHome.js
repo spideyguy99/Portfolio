@@ -17,14 +17,14 @@ const useStyles = makeStyles(theme=>({
         '& > *': {
             margin: theme.spacing(1),
         },
-        backgroundColor: "#263238",
+        backgroundColor: "#37474f",
         color: "#eceff1",
         paddingLeft: 50,
         padding: 12,
         display: "flex"
     },
     cardpaper: {
-        backgroundColor: "#263238",
+        backgroundColor: "#37474f",
         color: "#eceff1",
         minWidth: 250,
         marginTop: 20,
@@ -70,11 +70,11 @@ export default function MediaCard() {
                         </h3>
                     </div>
                     <ul>
-                        <li>I have a black belt</li>
-                        <li>I am VP of the Ultimate Frisbee Club</li>
-                        <li>I am currently working 2 jobs</li>
+                        <li>I have a black belt in Goju Ryu</li>
+                        <li>I am VP of the Ultimate Frisbee Club at IUPUI</li>
+                        <li>My favorite pizza is Pineapple pizza >:)</li>
                         <li>I have marched on Lucas Oil</li>
-                        <li>I participated in a research project</li>
+                        <li>I am from Blackford Indiana</li>
                     </ul>
                 </Paper>
                 <Paper className={classes.cardpaper}>
@@ -89,6 +89,11 @@ export default function MediaCard() {
                     </div>
                 </Paper>
             </div>
+            <Paper className={classes.cardpaper}>
+                <h3>
+                    The Site I am currently working on!
+                </h3>
+            </Paper>
 
         </div>
     );

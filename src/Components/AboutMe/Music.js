@@ -16,7 +16,7 @@ const useStyles = makeStyles({
     root: {
         width: 250,
         minHeight: 20,
-        backgroundColor: "#263238",
+        backgroundColor: "#37474f",
         color: "#eceff1",
         marginBottom: 20
     },
@@ -30,10 +30,10 @@ const useStyles = makeStyles({
         justifyContent: "space-around",
     },
     cardButton: {
-        backgroundColor: "#263238"
+        backgroundColor: "#546e7a"
     },
     cardpaper: {
-        backgroundColor: "#263238",
+        backgroundColor: "#37474f",
         color: "#eceff1",
         minWidth: 250,
         marginTop: 20,
@@ -53,7 +53,7 @@ export default function MusicCard() {
         <div>
             <Paper className={classes.cardpaper}>
                 <h2>My Favorite Albums!</h2>
-                A top 9 list of my favorite Albums! Click the Card to view a selected song from the album, the ALBUM button will take you to Spotify, and the wiki will lead you to more info about the band!
+                A top 9 list of my favorite Albums! Click the Card to view a selected song from the artist, the ALBUM button will take you to Spotify!
             </Paper>
             <div className={classes.card}>
             {MusicList.map(item => (
@@ -77,11 +77,8 @@ export default function MusicCard() {
                         </CardContent>
                     </CardActionArea>
                     <CardActions className={classes.cardbutton}>
-                        <Button  variant={"contained"} size="small" target={"_blank"} href={item.spot} style={{backgroundColor:"#455a64", color: "#eceff1"}}>
+                        <Button  variant={"contained"} size="small" target={"_blank"} href={item.spot} style={{backgroundColor:"#546e7a", color: "#eceff1"}}>
                             Album
-                        </Button>
-                        <Button variant={"contained"} size="small" target={"_blank"} href={item.wiki} style={{backgroundColor:"#455a64", color: "#eceff1"}}>
-                            Wiki
                         </Button>
                     </CardActions>
                 </Card>

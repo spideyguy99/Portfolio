@@ -30,9 +30,10 @@ const useStyles = makeStyles(theme =>({
         flexGrow: 4,
     },
     paper: {
-        backgroundColor: "#303f9f",
+        backgroundColor: "#37474f",
         display: "flex",
-        justifyContent: "space-around"
+        justifyContent: "space-around",
+        margin: "0 auto"
     }
 }));
 
