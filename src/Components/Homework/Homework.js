@@ -15,8 +15,8 @@ const useStyles = makeStyles(theme =>({
         backgroundColor:"#37474f",
         color: "#eceff1",
         marginBottom: 20,
-        marginLeft: 40,
-        marginRight: 40,
+        marginLeft: 20,
+        marginRight: 20,
         maxWidth: 175,
     },
     action: {

@@ -4,6 +4,7 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Avatar from '@material-ui/core/Avatar';
+import Button from "@material-ui/core/Button";
 
 //pages
 import Carousel from './Carousel';
@@ -71,10 +72,10 @@ export default function MediaCard() {
                     </div>
                     <ul>
                         <li>I have a black belt in Goju Ryu</li>
+                        <li>I am a Supervisor for UITS</li>
                         <li>I am VP of the Ultimate Frisbee Club at IUPUI</li>
-                        <li>My favorite pizza is Pineapple pizza >:)</li>
                         <li>I have marched on Lucas Oil</li>
-                        <li>I am from Blackford Indiana</li>
+                        <li>My favorite pizza is Pineapple pizza >:)</li>
                     </ul>
                 </Paper>
                 <Paper className={classes.cardpaper}>
@@ -83,16 +84,24 @@ export default function MediaCard() {
                         <ul>
                             <li>My portfolio is meant to give you both a look into my personal, and professional life.</li>
                             <li>In the navigation above you can find a selection of my favorite albums, video games, and shows!</li>
-                            <li>Links to all of my social media.</li>
-                            <li>A collection of my posted homework for my CIT 41300 class</li>
+                            <li>Links to all of my social media are in the icons of the navigation bar.</li>
+                            <li>A collection of my posted homework for my CIT 41300 class.</li>
                         </ul>
                     </div>
                 </Paper>
             </div>
-            <Paper className={classes.cardpaper}>
-                <h3>
+            <Paper className={classes.cardpaper} style={{display: "flex"}}>
+                <h3 style={{width: "75%"}}>
                     The Site I am currently working on!
                 </h3>
+                <Button
+                    target={"_blank"}
+                    href={"https://et.iupui.edu/"}
+                    variant={"contained"}
+                    style={{backgroundColor: "#e8eaf6"}}
+                >
+                    Engineering and Technology
+                </Button>
             </Paper>
 
         </div>

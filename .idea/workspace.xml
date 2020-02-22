@@ -3,18 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="3d53c4db-106d-4ae3-b263-2fbb3fb353a0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/public/favicon.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/AboutMe/Games.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/AboutMe/Games.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/AboutMe/Index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/AboutMe/Index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/AboutMe/Movies.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/AboutMe/Movies.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/AboutMe/Music.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/AboutMe/Music.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/AboutMe/mediaHome.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/AboutMe/mediaHome.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/Data/HomeworkData.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Data/HomeworkData.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/Homework/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Homework/Home.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/Homework/Homework.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Homework/Homework.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Resume.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Resume.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,6 +85,7 @@
       <workItem from="1581968497786" duration="939000" />
       <workItem from="1582119307355" duration="5985000" />
       <workItem from="1582141305565" duration="7512000" />
+      <workItem from="1582340556444" duration="1206000" />
     </task>
     <servers />
   </component>
