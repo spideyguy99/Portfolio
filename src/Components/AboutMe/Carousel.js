@@ -6,7 +6,7 @@ import { Carousel } from 'react-responsive-carousel';
 
      const banner = require('../Images/banner.jpeg');
 
-     const indy = require('../Images/indy.jpeg');
+     const indy = require('../Images/indy.jpg');
 
      const noahUlt = require('../Images/noahUlt.jpg');
 
