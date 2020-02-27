@@ -29,6 +29,12 @@ const useStyles = makeStyles(theme =>({
         marginLeft: 10,
         marginRight: 10,
         marginBottom: 20,
+    },
+    imgInCard: {
+        width:"95%",
+        borderRadius: 5,
+        border: "5px solid #eceff1",
+        marginLeft: 5,
     }
 }));
 
@@ -40,9 +46,13 @@ export default function Resume() {
 
     const BaseLine = require('./Images/bassline.JPG');
 
+    const BassPic = require('./Images/bassPic.JPG');
+
     const QuadLin = require('./Images/quadLine.JPG');
 
     const Paintball = require('./Images/paintball.JPG');
+
+    const PaintCover = require('./Images/PaintCover.JPG');
 
     return(
         <div>
@@ -223,19 +233,31 @@ export default function Resume() {
                            <h4>Ultimate Frisbee</h4>
                            <p>Club Vice President</p>
                            <img
-                               style={{width:"100%"}}
+                               className={classes.imgInCard}
                                src={UltTeam}
                            />
                        </Paper>
                        <Paper className={classes.paperinpaper} elevation={6}>
                            <h4>Marching Band</h4>
                            <p>Percussion: Bass Line & Quads</p>
+                           <div style={{display: "flex", flexWrap: "wrap",  justifyContent: "space-around", marginBottom: 5}}>
+                               <img
+                                   style={{height: 175,
+                                       borderRadius: 5,
+                                       border: "5px solid #eceff1",
+                                       justifyContent: "center"}}
+                                   src={BassPic}
+                               />
+                               <img
+                                   style={{height: 175,
+                                       borderRadius: 5,
+                                       border: "5px solid #eceff1",
+                                       justifyContent: "center"}}
+                                   src={BaseLine}
+                               />
+                           </div>
                            <img
-                               style={{width:"100%"}}
-                               src={BaseLine}
-                           />
-                           <img
-                               style={{width:"100%"}}
+                               className={classes.imgInCard}
                                src={QuadLin}
                            />
                        </Paper>
@@ -243,8 +265,12 @@ export default function Resume() {
                            <h4>Paintball</h4>
                            <p>Just a fun hobby I enjoy... maybe a little too much</p>
                            <img
-                               style={{width:"100%"}}
+                               className={classes.imgInCard}
                                src={Paintball}
+                           />
+                           <img
+                               className={classes.imgInCard}
+                               src={PaintCover}
                            />
                        </Paper>
                    </Paper>
