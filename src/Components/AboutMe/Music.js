@@ -16,7 +16,7 @@ const useStyles = makeStyles({
     root: {
         width: 250,
         minHeight: 20,
-        backgroundColor: "#37474f",
+        backgroundColor: "#546e7a",
         color: "#eceff1",
         marginBottom: 20
     },
@@ -29,11 +29,8 @@ const useStyles = makeStyles({
         flexWrap: "wrap",
         justifyContent: "space-around",
     },
-    cardButton: {
-        backgroundColor: "#546e7a"
-    },
     cardpaper: {
-        backgroundColor: "#37474f",
+        backgroundColor: "#546e7a",
         color: "#eceff1",
         minWidth: 250,
         marginTop: 20,
@@ -53,7 +50,7 @@ export default function MusicCard() {
         <div>
             <Paper className={classes.cardpaper}>
                 <h2>My Favorite Albums!</h2>
-                A top 9 list of my favorite Albums! Click the Card to view a selected song from the artist, the ALBUM button will take you to Spotify!
+                A top 9 list of my favorite Albums! Click the Card to view a selected song from the artist!
             </Paper>
             <div className={classes.card}>
             {MusicList.map(item => (
@@ -66,7 +63,7 @@ export default function MusicCard() {
                         />
                         <CardContent>
                             <Typography gutterBottom variant="h5" component="h2">
-                                {item.artist}
+                                {item.artist} - {item.album}
                             </Typography>
                             <Typography variant="subtitle2" >
                                 {item.genre}
@@ -76,11 +73,6 @@ export default function MusicCard() {
                             </Typography>
                         </CardContent>
                     </CardActionArea>
-                    <CardActions className={classes.cardbutton}>
-                        <Button  variant={"contained"} size="small" target={"_blank"} href={item.spot} style={{backgroundColor:"#546e7a", color: "#eceff1"}}>
-                            Album
-                        </Button>
-                    </CardActions>
                 </Card>
             ))}
             </div>

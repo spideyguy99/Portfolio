@@ -22,8 +22,12 @@ import Container from '@material-ui/core/Container';
 
 //page imports
 import Resume from "./Components/Resume";
-import Index from "./Components/AboutMe/Index";
 import Homework from "./Components/Homework/Home";
+import Music from "./Components/AboutMe/Music";
+import Movies from "./Components/AboutMe/Movies";
+import Games from "./Components/AboutMe/Games";
+import mediaHome from "./Components/AboutMe/mediaHome";
+import Contact from "./Components/Contact";
 
 const useStyles = makeStyles(theme => ({
     root: {
@@ -40,6 +44,18 @@ const useStyles = makeStyles(theme => ({
     },
     appbar: {
         backgroundColor: "#263238"
+    },
+    footercontainer: {
+        backgroundColor: "#263238",
+        color: "white",
+        display: "flex",
+    },
+    footer: {
+        backgroundColor: "#263238",
+        color: "white",
+        display: "flex",
+        marginTop: 20,
+        marginBottom: 20
     }
 }));
 
@@ -57,17 +73,6 @@ function App() {
                               <Link to={"/"} style={{color: "white", textDecoration: "none"}}>
                                   My Portfolio
                               </Link>
-                              <IconButton aria-label="GitHub" href="https://www.instagram.com/https.noah99/" target={"_blank"}>
-                                  <InstagramIcon style={{color: "#e8eaf6"}}/>
-                              </IconButton>
-
-                              <IconButton aria-label="GitHub" href="https://www.facebook.com/noah.furniss.73" target={"_blank"}>
-                                  <FacebookIcon style={{color: "#e8eaf6"}}/>
-                              </IconButton>
-
-                              <IconButton aria-label="GitHub" href="https://www.linkedin.com/in/noah-furniss-61a682163/" target={"_blank"}>
-                                  <LinkedInIcon style={{color: "#e8eaf6"}}/>
-                              </IconButton>
                           </Typography>
 
                           <Link to={"/"} style={{textDecoration: "none"}}>
@@ -88,19 +93,53 @@ function App() {
                               </Button>
                           </Link>
 
-                          <IconButton aria-label="GitHub" href="https://github.com/spideyguy99" target={"_blank"}>
-                              <GitHubIcon style={{color: "#e8eaf6"}}/>
-                          </IconButton>
-
+                          <Link to={"/contact_me"} style={{textDecoration: "none"}}>
+                              <Button variant={"contained"} className={classes.menuButton}>
+                                  Contact Me
+                              </Button>
+                          </Link>
                       </Toolbar>
                   </AppBar>
               </nav>
-              <Container maxWidth={"md"} style={{ backgroundColor: "#212121", minHeight: '100vh' }}>
+              <Container maxWidth={"md"} style={{ backgroundColor: "#212121", minHeight: '100vh', paddingBottom: 20 }}>
                   <Switch>
-                      <Route path={"/"} component={Index} exact />
+                      <Route path={"/"}  exact component={mediaHome} />
+                      <Route path={"/music"} component={Music} />
+                      <Route path={"/movies"} component={Movies} />
+                      <Route path={"/games"} component={Games} />
                       <Route path={"/resume"} component={Resume} />
                       <Route path={"/homework"} component={Homework} />
+                      <Route path={"/contact_me"} component={Contact} />
                   </Switch>
+              </Container>
+          </div>
+          <div className={classes.footercontainer}>
+              <Container className={classes.footer} maxWidth={"md"}>
+                  <div style={{width: "70%"}}>
+                      <Link to={"/contact_me"} style={{textDecoration: "none", color: "white"}}>
+                          Contact Me!
+                      </Link>
+                  </div>
+                  <div style={{marginTop: 15}}>
+                      Follow Me!
+                  </div>
+                  <div style={{marginLeft:"auto", marginRight:0}}>
+                      <IconButton aria-label="GitHub" href="https://www.instagram.com/https.noah99/" target={"_blank"}>
+                          <InstagramIcon style={{color: "#e8eaf6"}}/>
+                      </IconButton>
+
+                      <IconButton aria-label="GitHub" href="https://www.facebook.com/noah.furniss.73" target={"_blank"}>
+                          <FacebookIcon style={{color: "#e8eaf6"}}/>
+                      </IconButton>
+
+                      <IconButton aria-label="GitHub" href="https://www.linkedin.com/in/noah-furniss-61a682163/" target={"_blank"}>
+                          <LinkedInIcon style={{color: "#e8eaf6"}}/>
+                      </IconButton>
+
+                      <IconButton aria-label="GitHub" href="https://github.com/spideyguy99" target={"_blank"}>
+                          <GitHubIcon style={{color: "#e8eaf6"}}/>
+                      </IconButton>
+                  </div>
               </Container>
           </div>
       </Router>

@@ -8,7 +8,9 @@ import Button from "@material-ui/core/Button";
 
 //pages
 import Carousel from './Carousel';
-
+import Music from "./Music";
+import Games from "./Games";
+import Movies from "./Movies";
 
 const useStyles = makeStyles(theme=>({
     text: {
@@ -22,26 +24,29 @@ const useStyles = makeStyles(theme=>({
         color: "#eceff1",
         paddingLeft: 50,
         padding: 12,
-        display: "flex"
+        display: "flex",
+        margin: 20
     },
     cardpaper: {
         backgroundColor: "#37474f",
         color: "#eceff1",
         minWidth: 250,
-        marginTop: 20,
-        marginLeft: 20,
-        marginRight: 20,
-        marginBottom: 20,
+        margin: 20,
         padding: 8
     },
     paperholder: {
         display: "flex",
-        justifyContent: "space-around"
+        justifyContent: "space-around",
     },
     large: {
         width: theme.spacing(15),
         height: theme.spacing(15),
     },
+    mediaholder: {
+        paddingTop: 10,
+        margin: 20,
+        backgroundColor: "#37474f"
+    }
 }));
 
 export default function MediaCard() {
@@ -79,31 +84,39 @@ export default function MediaCard() {
                     </ul>
                 </Paper>
                 <Paper className={classes.cardpaper}>
-                    <h3>What is this website for?</h3>
-                    <div>
-                        <ul>
-                            <li>My portfolio is meant to give you both a look into my personal, and professional life.</li>
-                            <li>In the navigation above you can find a selection of my favorite albums, video games, and shows!</li>
-                            <li>Links to all of my social media are in the icons of the navigation bar.</li>
-                            <li>A collection of my posted homework for my CIT 41300 class.</li>
-                        </ul>
-                    </div>
+                    <h3 style={{width: "75%"}}>
+                        The Site I am currently working on!
+                    </h3>
+                    <Button
+                        target={"_blank"}
+                        href={"https://et.iupui.edu/"}
+                        variant={"contained"}
+                        style={{backgroundColor: "#e8eaf6"}}
+                    >
+                        Engineering and Technology
+                    </Button>
                 </Paper>
             </div>
-            <Paper className={classes.cardpaper} style={{display: "flex"}}>
-                <h3 style={{width: "75%"}}>
-                    The Site I am currently working on!
-                </h3>
-                <Button
-                    target={"_blank"}
-                    href={"https://et.iupui.edu/"}
-                    variant={"contained"}
-                    style={{backgroundColor: "#e8eaf6"}}
-                >
-                    Engineering and Technology
-                </Button>
+            <Paper className={classes.cardpaper} >
+                <h3>What is this website for?</h3>
+                <div>
+                    <ul>
+                        <li>My portfolio is meant to give you both a look into my personal, and professional life.</li>
+                        <li>In the navigation above you can find a selection of my favorite albums, video games, and shows!</li>
+                        <li>Links to all of my social media are in the icons of the navigation bar.</li>
+                        <li>A collection of my posted homework for my CIT 41300 class.</li>
+                    </ul>
+                </div>
             </Paper>
-
+            <Paper className={classes.mediaholder}>
+                <Music/>
+            </Paper>
+            <Paper className={classes.mediaholder}>
+                <Games/>
+            </Paper>
+            <Paper className={classes.mediaholder}>
+                <Movies/>
+            </Paper>
         </div>
     );
 }

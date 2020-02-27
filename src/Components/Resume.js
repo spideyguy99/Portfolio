@@ -39,8 +39,7 @@ export default function Resume() {
 
     return(
         <div>
-            <div style={{backgroundColor: "#212121", color: "#212121"}}>
-                Bumber
+            <div style={{backgroundColor: "#212121", height: 20}}>
             </div>
             <Paper className={classes.cardpaper} style={{width: "50%", margin: "0 auto", marginBottom: 20}} elevation={10}>
                 <div style={{display: "flex", flexWrap: "wrap", justifyContent: "space-around"}}>

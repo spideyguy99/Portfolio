@@ -34,8 +34,8 @@ export default function Home () {
 
     return(
         <div>
-            <div style={{backgroundColor: "#212121", color: "#212121"}}>
-                Bumber
+            <div style={{backgroundColor: "#212121", height: 20}}>
+
             </div>
             <Paper className={classes.cardpaper}>
                 <h2>Homework from CIT 41300 - Advanced Commercial Web Development</h2>
