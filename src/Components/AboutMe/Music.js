@@ -54,7 +54,7 @@ export default function MusicCard() {
             </Paper>
             <div className={classes.card}>
             {MusicList.map(item => (
-                <Card className={classes.root} elevation={5}>
+                <Card className={classes.root} elevation={0}>
                     <CardActionArea href={item.youTube} target={"_blank"}>
                         <CardMedia
                             className={classes.media}
@@ -73,6 +73,7 @@ export default function MusicCard() {
                             </Typography>
                         </CardContent>
                     </CardActionArea>
+                    <div style={{height: "100%", width: "100%", backgroundColor: "#37474f"}}/>
                 </Card>
             ))}
             </div>

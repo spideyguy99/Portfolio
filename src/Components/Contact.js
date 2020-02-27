@@ -93,7 +93,7 @@ export default function Contact() {
                         className={classes.button}
                         variant={"contained"}
                     >
-                        Submit
+                        Send
                     </Button>
                 </form>
             </Paper>

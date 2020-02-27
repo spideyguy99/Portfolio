@@ -54,7 +54,7 @@ export default function GamesCard() {
             </Paper>
             <div className={classes.card}>
                 {GamesList.map(item => (
-                    <Card className={classes.root} elevation={5}>
+                    <Card className={classes.root} elevation={0}>
                         <CardActionArea href={item.store} target={"_blank"}>
                             <CardMedia
                                 className={classes.media}
@@ -62,7 +62,7 @@ export default function GamesCard() {
                                 title={item.name}
                             />
                             <CardContent>
-                                <Typography gutterBottom variant="h5" component="h2">
+                                <Typography gutterBottom variant="h5" component="h2" >
                                     {item.name}
                                 </Typography>
                                 <Typography variant="subtitle2" >
@@ -73,6 +73,7 @@ export default function GamesCard() {
                                 </Typography>
                             </CardContent>
                         </CardActionArea>
+                        <div style={{height: "100%", width: "100%", backgroundColor: "#37474f"}}/>
                     </Card>
                 ))}
             </div>

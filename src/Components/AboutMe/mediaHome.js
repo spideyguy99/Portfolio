@@ -34,6 +34,13 @@ const useStyles = makeStyles(theme=>({
         margin: 20,
         padding: 8
     },
+    cardinpaper: {
+        backgroundColor: "#37474f",
+        color: "#eceff1",
+        minWidth: 250,
+        margin: 20,
+        padding: 20
+    },
     paperholder: {
         display: "flex",
         justifyContent: "space-around",
@@ -69,7 +76,7 @@ export default function MediaCard() {
                 </div>
             </Paper>
             <div className={classes.paperholder}>
-                <Paper className={classes.cardpaper} elevation={5}>
+                <Paper className={classes.cardinpaper} elevation={5}>
                     <div>
                         <h3>
                             Some Fun Facts About Me!
@@ -83,8 +90,8 @@ export default function MediaCard() {
                         <li>My favorite pizza is Pineapple pizza >:)</li>
                     </ul>
                 </Paper>
-                <Paper className={classes.cardpaper}>
-                    <h3 style={{width: "75%"}}>
+                <Paper className={classes.cardinpaper}>
+                    <h3 style={{height: "50%"}}>
                         The Site I am currently working on!
                     </h3>
                     <Button
@@ -102,19 +109,18 @@ export default function MediaCard() {
                 <div>
                     <ul>
                         <li>My portfolio is meant to give you both a look into my personal, and professional life.</li>
-                        <li>In the navigation above you can find a selection of my favorite albums, video games, and shows!</li>
-                        <li>Links to all of my social media are in the icons of the navigation bar.</li>
-                        <li>A collection of my posted homework for my CIT 41300 class.</li>
+                        <li>In the navigation above you can find links to my Resume, some of my relavant course work, and a contact form if you like what you see!</li>
+                        <li>Links to all of my social media are in the footer, and on my Resume page.</li>
                     </ul>
                 </div>
             </Paper>
-            <Paper className={classes.mediaholder}>
+            <Paper className={classes.mediaholder} elevation={10}>
                 <Music/>
             </Paper>
-            <Paper className={classes.mediaholder}>
+            <Paper className={classes.mediaholder} elevation={10}>
                 <Games/>
             </Paper>
-            <Paper className={classes.mediaholder}>
+            <Paper className={classes.mediaholder} elevation={10}>
                 <Movies/>
             </Paper>
         </div>

@@ -2,16 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3d53c4db-106d-4ae3-b263-2fbb3fb353a0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Components/Contact.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/Images/bassline.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/Images/paintball.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/Images/quadLine.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/Images/ultTeam.JPG" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/AboutMe/Games.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/AboutMe/Games.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/AboutMe/Index.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/AboutMe/Movies.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/AboutMe/Movies.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/AboutMe/Music.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/AboutMe/Music.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/AboutMe/mediaHome.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/AboutMe/mediaHome.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Data/MusicData.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Data/MusicData.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Homework/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Homework/Home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Contact.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Contact.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/Resume.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Resume.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -92,7 +92,7 @@
       <workItem from="1582119307355" duration="5985000" />
       <workItem from="1582141305565" duration="7512000" />
       <workItem from="1582340556444" duration="1443000" />
-      <workItem from="1582746642526" duration="8540000" />
+      <workItem from="1582746642526" duration="12135000" />
     </task>
     <servers />
   </component>

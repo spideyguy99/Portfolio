@@ -5,7 +5,6 @@ import IconButton from "@material-ui/core/IconButton";
 import InstagramIcon from "@material-ui/icons/Instagram";
 import FacebookIcon from "@material-ui/icons/Facebook";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
-import Typography from "@material-ui/core/Typography";
 import GitHubIcon from "@material-ui/icons/GitHub";
 
 const useStyles = makeStyles(theme =>({
@@ -36,6 +35,14 @@ const useStyles = makeStyles(theme =>({
 export default function Resume() {
 
     const classes = useStyles();
+
+    const UltTeam = require('./Images/ultTeam.JPG');
+
+    const BaseLine = require('./Images/bassline.JPG');
+
+    const QuadLin = require('./Images/quadLine.JPG');
+
+    const Paintball = require('./Images/paintball.JPG');
 
     return(
         <div>
@@ -72,27 +79,27 @@ export default function Resume() {
                 </p>
             </Paper>
 
-            <div style={{display: "flex", flexWrap: "flexWrap", width: "100%"}}>
-                <Paper className={classes.cardpaper} style={{width: "50%"}}>
-                    <h3>
-                        Education
-                    </h3>
-                    <Paper className={classes.paperinpaper} elevation={6}>
-                        <h4>
-                            Indiana University Purdue University Indianapolis - IUPUI
-                        </h4>
-                        <p>Purdue School of Engineering and Technology </p>
-                        <p>Bachelor of Science Computer and Information Technology</p>
-                        <p>Concentration: Web/Application Development</p>
+            <div style={{display: "flex", width: "100%"}}>
+                    <Paper className={classes.cardpaper} style={{width: "50%"}}>
+                        <h3>
+                            Education
+                        </h3>
+                        <Paper className={classes.paperinpaper} elevation={6}>
+                            <h4>
+                                Indiana University Purdue University Indianapolis - IUPUI
+                            </h4>
+                            <p>Purdue School of Engineering and Technology </p>
+                            <p>Bachelor of Science Computer and Information Technology</p>
+                            <p>Concentration: Web/Application Development</p>
+                        </Paper>
+                        <Paper className={classes.paperinpaper} elevation={6}>
+                            <h4>
+                                Indiana University Kokomo
+                            </h4>
+                            <p>Indiana University School of Sciences</p>
+                            <p>Bachelor of Science New Media</p>
+                        </Paper>
                     </Paper>
-                    <Paper className={classes.paperinpaper} elevation={6}>
-                        <h4>
-                            Indiana University Kokomo
-                        </h4>
-                        <p>Indiana University School of Sciences</p>
-                        <p>Bachelor of Science New Media</p>
-                    </Paper>
-                </Paper>
                 <Paper className={classes.cardpaper} style={{width: "50%"}}>
                     <h3>Relavant Courses</h3>
                     <Paper className={classes.paperinpaper} elevation={6}>
@@ -208,15 +215,39 @@ export default function Resume() {
                        </ul>
                    </Paper>
                </Paper>
-               <Paper className={classes.cardpaper} style={{width: "50%"}} elevation={6}>
-                   <h3>
-                       Activites
-                   </h3>
-                   <Paper className={classes.paperinpaper} elevation={6}>
-                       <h4>Ultimate Frisbee</h4>
-                       <p>Club Vice President</p>
+                   <Paper className={classes.cardpaper} style={{width: "100%"}} elevation={6}>
+                       <h3>
+                           Activites
+                       </h3>
+                       <Paper className={classes.paperinpaper} elevation={6}>
+                           <h4>Ultimate Frisbee</h4>
+                           <p>Club Vice President</p>
+                           <img
+                               style={{width:"100%"}}
+                               src={UltTeam}
+                           />
+                       </Paper>
+                       <Paper className={classes.paperinpaper} elevation={6}>
+                           <h4>Marching Band</h4>
+                           <p>Percussion: Bass Line & Quads</p>
+                           <img
+                               style={{width:"100%"}}
+                               src={BaseLine}
+                           />
+                           <img
+                               style={{width:"100%"}}
+                               src={QuadLin}
+                           />
+                       </Paper>
+                       <Paper className={classes.paperinpaper} elevation={6}>
+                           <h4>Paintball</h4>
+                           <p>Just a fun hobby I enjoy... maybe a little too much</p>
+                           <img
+                               style={{width:"100%"}}
+                               src={Paintball}
+                           />
+                       </Paper>
                    </Paper>
-               </Paper>
             </div>
         </div>
     );
