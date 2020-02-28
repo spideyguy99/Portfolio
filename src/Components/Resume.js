@@ -33,7 +33,7 @@ const useStyles = makeStyles(theme =>({
     imgInCard: {
         width:"95%",
         borderRadius: 5,
-        border: "5px solid #eceff1",
+        border: "5px solid #37474f",
         marginLeft: 5,
     }
 }));
@@ -63,21 +63,23 @@ export default function Resume() {
                     <h1>
                         My Resume
                     </h1>
-                    <IconButton aria-label="GitHub" href="https://www.instagram.com/https.noah99/" target={"_blank"}>
-                        <InstagramIcon style={{color: "#e8eaf6"}}/>
-                    </IconButton>
+                   <div style={{marginTop: 20}}>
+                       <IconButton aria-label="GitHub" href="https://www.instagram.com/https.noah99/" target={"_blank"}>
+                           <InstagramIcon style={{color: "#e8eaf6"}}/>
+                       </IconButton>
 
-                    <IconButton aria-label="GitHub" href="https://www.facebook.com/noah.furniss.73" target={"_blank"}>
-                        <FacebookIcon style={{color: "#e8eaf6"}}/>
-                    </IconButton>
+                       <IconButton aria-label="GitHub" href="https://www.facebook.com/noah.furniss.73" target={"_blank"}>
+                           <FacebookIcon style={{color: "#e8eaf6"}}/>
+                       </IconButton>
 
-                    <IconButton aria-label="GitHub" href="https://www.linkedin.com/in/noah-furniss-61a682163/" target={"_blank"}>
-                        <LinkedInIcon style={{color: "#e8eaf6"}}/>
-                    </IconButton>
+                       <IconButton aria-label="GitHub" href="https://www.linkedin.com/in/noah-furniss-61a682163/" target={"_blank"}>
+                           <LinkedInIcon style={{color: "#e8eaf6"}}/>
+                       </IconButton>
 
-                    <IconButton aria-label="GitHub" href="https://github.com/spideyguy99" target={"_blank"}>
-                        <GitHubIcon style={{color: "#e8eaf6"}}/>
-                    </IconButton>
+                       <IconButton aria-label="GitHub" href="https://github.com/spideyguy99" target={"_blank"}>
+                           <GitHubIcon style={{color: "#e8eaf6"}}/>
+                       </IconButton>
+                   </div>
                 </div>
             </Paper>
             <Paper className={classes.cardpaper}>
@@ -90,7 +92,7 @@ export default function Resume() {
             </Paper>
 
             <div style={{display: "flex", width: "100%"}}>
-                    <Paper className={classes.cardpaper} style={{width: "50%"}}>
+                    <Paper className={classes.cardpaper} style={{width: "50%",}}>
                         <h3>
                             Education
                         </h3>
@@ -135,23 +137,23 @@ export default function Resume() {
                     Work Experience
                 </h3>
                 <Paper style={{display: "flex"}} className={classes.paperinpaper} elevation={6}>
-                    <div style={{width: "75%"}}>
+                    <div style={{width: "50%"}}>
                         <h4>IUPUI: University Information Technology Services</h4>
                         <p>Consultant Supervisor</p>
                     </div>
-                        <div>
-                            <ul>
-                                <li>Trained and oversaw constultants</li>
-                                <li>Assisted with both First and Second Tier IT Support for IUPUI Students</li>
-                            </ul>
-                        </div>
+                    <div style={{width: "50%"}}>
+                        <ul>
+                            <li>Trained and oversaw constultants</li>
+                            <li>Assisted with both First and Second Tier IT Support for IUPUI Students</li>
+                        </ul>
+                    </div>
                 </Paper>
                 <Paper style={{display: "flex"}} className={classes.paperinpaper} elevation={6}>
-                    <div style={{width: "75%"}}>
+                    <div style={{width: "50%"}}>
                         <h4>IUPUI: School of Engineering and Technology</h4>
                         <p>Assistant to the Webmaster</p>
                     </div>
-                    <div>
+                    <div style={{width: "50%"}}>
                         <ul>
                             <li>Developed Engineering and Technology Website using Trello (Kanban) </li>
                             <li>Built website using Cascade CMS</li>
@@ -159,11 +161,11 @@ export default function Resume() {
                     </div>
                 </Paper>
                 <Paper style={{display: "flex"}} className={classes.paperinpaper} elevation={6}>
-                    <div style={{width: "80%"}}>
-                        <h4>IUPUI: Multidisciplinary Undergraduate Research Institute (MURI)</h4>
+                    <div style={{width: "50%"}}>
+                        <h4>IUPUI: Multidisciplinary Undergraduate Research Institute</h4>
                         <p>Researcher / Developer</p>
                     </div>
-                    <div>
+                    <div style={{width: "50%"}}>
                         <ul>
                             <li>Researched and Developed a mobile application with React Native</li>
                             <li>Present total research findings at CRL Summer Symposium at IUPUI</li>
@@ -244,14 +246,14 @@ export default function Resume() {
                                <img
                                    style={{height: 175,
                                        borderRadius: 5,
-                                       border: "5px solid #eceff1",
+                                       border: "5px solid #37474f",
                                        justifyContent: "center"}}
                                    src={BassPic}
                                />
                                <img
                                    style={{height: 175,
                                        borderRadius: 5,
-                                       border: "5px solid #eceff1",
+                                       border: "5px solid #37474f",
                                        justifyContent: "center"}}
                                    src={BaseLine}
                                />
