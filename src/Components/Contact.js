@@ -3,6 +3,10 @@ import Paper from '@material-ui/core/Paper';
 import {makeStyles} from '@material-ui/core/styles';
 import TextField from '@material-ui/core/TextField';
 import Button from "@material-ui/core/Button";
+import IconButton from "@material-ui/core/IconButton";
+import InstagramIcon from "@material-ui/icons/Instagram";
+import FacebookIcon from "@material-ui/icons/Facebook";
+import ArrowForwardIcon from '@material-ui/icons/ArrowForward';
 
 const useStyles = makeStyles(theme =>({
     cardpaper: {
@@ -51,10 +55,20 @@ export default function Contact() {
         <div>
             <div style={{backgroundColor: "#212121", height: 20}}>
             </div>
-            <Paper className={classes.cardpaper} style={{width: "50%", margin: "0 auto", marginBottom: 20}} elevation={10}>
+            <Paper className={classes.cardpaper} style={{margin: "0 auto", marginBottom: 20}} elevation={10}>
                 <h1>
                     Contact Me
                 </h1>
+                <div style={{display: "flex"}}>
+                    <p>Or direct message me using these  </p>
+                    <ArrowForwardIcon style={{marginTop: 15, marginLeft: 3}}/>
+                    <IconButton aria-label="GitHub" href="https://www.instagram.com/https.noah99/" target={"_blank"}>
+                        <InstagramIcon style={{color: "#e8eaf6"}}/>
+                    </IconButton>
+                    <IconButton aria-label="GitHub" href="https://www.facebook.com/noah.furniss.73" target={"_blank"}>
+                        <FacebookIcon style={{color: "#e8eaf6"}}/>
+                    </IconButton>
+                </div>
             </Paper>
 
             <Paper className={classes.cardpaper} elevation={5}>
