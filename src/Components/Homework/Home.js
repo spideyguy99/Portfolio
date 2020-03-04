@@ -49,7 +49,7 @@ export default function Home () {
                     <h2>I also have a CodePen!</h2>
                     All homeworks are JavaScript, 100 and 200 level classes
                 </div>
-                <Button variant={"contained"} target={"_blank"} href={"https://codepen.io/NFurniss"}>
+                <Button variant={"contained"} target={"_blank"} href={"https://codepen.io/NFurniss"} style={{margin: 20, height: 50}}>
                     CodePen
                 </Button>
             </Paper>

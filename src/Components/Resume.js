@@ -47,13 +47,13 @@ export default function Resume() {
 
     const BaseLine = require('./Images/bassline.JPG');
 
-    const BassPic = require('./Images/bassPic.JPG');
-
-    const QuadLin = require('./Images/quadLine.JPG');
-
     const Paintball = require('./Images/paintball.JPG');
 
-    const PaintCover = require('./Images/PaintCover.JPG');
+    const IUPUI = require('./Images/iupui.png');
+
+    const IUK = require('./Images/iukokomo.png');
+
+    const FHS = require('./Images/fhs.png');
 
     return(
         <div>
@@ -91,32 +91,7 @@ export default function Resume() {
                     To constantly expand my knowledge and proficiency with any and all tools that allow me to create and maintain professional websites.
                 </p>
             </Paper>
-            <Paper className={classes.cardpaper}>
-                <h3>
-                    Education
-                </h3>
-                <Paper className={classes.paperinpaper} elevation={6}>
-                    <h4>
-                        Indiana University Purdue University Indianapolis - IUPUI
-                    </h4>
-                    <p>Purdue School of Engineering and Technology </p>
-                    <p>Bachelor of Science Computer and Information Technology</p>
-                    <p>Concentration: Web/Application Development</p>
-                </Paper>
-                <Paper className={classes.paperinpaper} elevation={6}>
-                    <h4>
-                        Indiana University Kokomo
-                    </h4>
-                    <p>Indiana University School of Sciences</p>
-                    <p>Bachelor of Science New Media</p>
-                </Paper>
-                <Paper className={classes.paperinpaper} elevation={6}>
-                    <h4>
-                        Fishers High School
-                    </h4>
-                    <p>Core 40</p>
-                </Paper>
-            </Paper>
+
         <Paper className={classes.cardpaper} style={{display: "flex", flexWrap: "wrap", justifyContent: "space-around"}}>
             <h3 style={{width: "100%"}}>
                 Skills
@@ -124,8 +99,18 @@ export default function Resume() {
             <Paper className={classes.paperinpaper} elevation={6} style={{width: 350}}>
                 <h4>Programming Languages</h4>
                 <ul>
-                    <li>JavaScript (JQuery, Vue)</li>
-                    <li>React, React Native</li>
+                    <li>JavaScript</li>
+                    <ul>
+                        <li>Vue</li>
+                        <li>JQuery</li>
+                    </ul>
+                    <li>React JS</li>
+                    <ul>
+                        <li>Material UI</li>
+                        <li>Redux</li>
+                        <li>Firebase</li>
+                    </ul>
+                    <li>React Native</li>
                     <li>HTML</li>
                     <li>CSS</li>
                     <li>Java</li>
@@ -149,6 +134,8 @@ export default function Resume() {
                     <li>Premiere</li>
                 </ul>
                 <li>GitHub</li>
+                <li>Netlify</li>
+                <li>Google Firebase</li>
             </ul>
         </Paper>
             <Paper className={classes.paperinpaper} elevation={6} style={{width: 350}}>
@@ -211,6 +198,41 @@ export default function Resume() {
                     </div>
                 </Paper>
             </Paper>
+            <Paper className={classes.cardpaper}>
+                <h3>
+                    Education
+                </h3>
+                <Paper className={classes.paperinpaper} elevation={6} style={{display: "flex"}}>
+                    <div style={{width: "100%", margin: 20}}>
+                        <h4>
+                            Indiana University Purdue University Indianapolis - IUPUI
+                        </h4>
+                        <p>Purdue School of Engineering and Technology </p>
+                        <p>Bachelor of Science Computer and Information Technology</p>
+                        <p>Concentration: Web/Application Development</p>
+                    </div>
+                    <img src={IUPUI} style={{height: 100, margin: 20}}/>
+                </Paper>
+                <Paper className={classes.paperinpaper} elevation={6} style={{display: "flex"}}>
+                    <div style={{width: "100%", margin: 20}}>
+                        <h4>
+                            Indiana University Kokomo
+                        </h4>
+                        <p>Indiana University School of Sciences</p>
+                        <p>Bachelor of Science New Media</p>
+                    </div>
+                    <img src={IUK} style={{height: 100, margin: 20}}/>
+                </Paper>
+                <Paper className={classes.paperinpaper} elevation={6} style={{display: "flex"}}>
+                    <div style={{width: "100%", margin: 20}}>
+                        <h4>
+                            Fishers High School
+                        </h4>
+                        <p>Core 40</p>
+                    </div>
+                    <img src={FHS} style={{height: 100, margin: 20}}/>
+                </Paper>
+            </Paper>
             <div style={{display: "flex", flexWrap: "wrap", justifyContent: "space-around"}}>
                    <Paper className={classes.cardpaper} elevation={6} style={{display: "flex", flexWrap: "wrap", justifyContent: "space-around"}}>
                        <h3 style={{width: "100%"}}>
@@ -232,7 +254,7 @@ export default function Resume() {
                                src={BaseLine}
                            />
                        </Paper>
-                       <Paper className={classes.paperinpaper} elevation={6}>
+                       <Paper className={classes.paperinpaper} elevation={6} style={{width:"44%"}}>
                            <h4>Paintball</h4>
                            <p>Just a fun hobby I enjoy... maybe a little too much</p>
                            <img
