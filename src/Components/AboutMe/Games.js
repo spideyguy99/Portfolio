@@ -73,7 +73,6 @@ export default function GamesCard() {
                                 </Typography>
                             </CardContent>
                         </CardActionArea>
-                        <div style={{height: "100%", width: "100%", backgroundColor: "#37474f"}}/>
                     </Card>
                 ))}
             </div>

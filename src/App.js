@@ -89,7 +89,7 @@ function App() {
 
                           <Link to={"/homework"} style={{textDecoration: "none"}}>
                               <Button variant={"contained"} className={classes.menuButton}>
-                                  Course Work
+                                  Relevant Work
                               </Button>
                           </Link>
 
@@ -101,7 +101,7 @@ function App() {
                       </Toolbar>
                   </AppBar>
               </nav>
-              <Container maxWidth={"md"} style={{ backgroundColor: "#212121", minHeight: '100vh', paddingBottom: 20 }}>
+              <Container maxWidth={"md"} style={{ backgroundColor: "#212121", minHeight: '90vh', paddingBottom: 20 }}>
                   <Switch>
                       <Route path={"/"}  exact component={mediaHome} />
                       <Route path={"/music"} component={Music} />

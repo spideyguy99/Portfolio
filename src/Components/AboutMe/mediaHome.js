@@ -70,9 +70,6 @@ export default function MediaCard() {
                     <h1>
                         My name is Noah!
                     </h1>
-                    <h4>
-                        But I'm guessing you already knew that.
-                    </h4>
                 </div>
             </Paper>
             <div className={classes.paperholder}>

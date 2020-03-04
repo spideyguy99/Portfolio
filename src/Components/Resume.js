@@ -35,6 +35,7 @@ const useStyles = makeStyles(theme =>({
         borderRadius: 5,
         border: "5px solid #37474f",
         marginLeft: 5,
+        justifyContent: "space-around"
     }
 }));
 
@@ -90,48 +91,84 @@ export default function Resume() {
                     To constantly expand my knowledge and proficiency with any and all tools that allow me to create and maintain professional websites.
                 </p>
             </Paper>
-
-            <div style={{display: "flex", width: "100%"}}>
-                    <Paper className={classes.cardpaper} style={{width: "50%",}}>
-                        <h3>
-                            Education
-                        </h3>
-                        <Paper className={classes.paperinpaper} elevation={6}>
-                            <h4>
-                                Indiana University Purdue University Indianapolis - IUPUI
-                            </h4>
-                            <p>Purdue School of Engineering and Technology </p>
-                            <p>Bachelor of Science Computer and Information Technology</p>
-                            <p>Concentration: Web/Application Development</p>
-                        </Paper>
-                        <Paper className={classes.paperinpaper} elevation={6}>
-                            <h4>
-                                Indiana University Kokomo
-                            </h4>
-                            <p>Indiana University School of Sciences</p>
-                            <p>Bachelor of Science New Media</p>
-                        </Paper>
-                    </Paper>
-                <Paper className={classes.cardpaper} style={{width: "50%"}}>
-                    <h3>Relavant Courses</h3>
-                    <Paper className={classes.paperinpaper} elevation={6}>
-                        <h4>Commercial Web Development</h4>
-                        <p>Advanced React JavaScript</p>
-                    </Paper>
-                    <Paper className={classes.paperinpaper} elevation={6}>
-                        <h4>Website Design</h4>
-                        <p>Basic HTML and CSS</p>
-                    </Paper>
-                    <Paper className={classes.paperinpaper} elevation={6}>
-                        <h4>Physical Computing</h4>
-                        <p>Processing Javascript, and Robotics</p>
-                    </Paper>
-                    <Paper className={classes.paperinpaper} elevation={6}>
-                        <h4>Information Technology Architectures</h4>
-                        <p>Basics of both computing hardware and software</p>
-                    </Paper>
+            <Paper className={classes.cardpaper}>
+                <h3>
+                    Education
+                </h3>
+                <Paper className={classes.paperinpaper} elevation={6}>
+                    <h4>
+                        Indiana University Purdue University Indianapolis - IUPUI
+                    </h4>
+                    <p>Purdue School of Engineering and Technology </p>
+                    <p>Bachelor of Science Computer and Information Technology</p>
+                    <p>Concentration: Web/Application Development</p>
                 </Paper>
-            </div>
+                <Paper className={classes.paperinpaper} elevation={6}>
+                    <h4>
+                        Indiana University Kokomo
+                    </h4>
+                    <p>Indiana University School of Sciences</p>
+                    <p>Bachelor of Science New Media</p>
+                </Paper>
+                <Paper className={classes.paperinpaper} elevation={6}>
+                    <h4>
+                        Fishers High School
+                    </h4>
+                    <p>Core 40</p>
+                </Paper>
+            </Paper>
+        <Paper className={classes.cardpaper} style={{display: "flex", flexWrap: "wrap", justifyContent: "space-around"}}>
+            <h3 style={{width: "100%"}}>
+                Skills
+            </h3>
+            <Paper className={classes.paperinpaper} elevation={6} style={{width: 350}}>
+                <h4>Programming Languages</h4>
+                <ul>
+                    <li>JavaScript (JQuery, Vue)</li>
+                    <li>React, React Native</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Java</li>
+                    <li>C++</li>
+                    <li>Visual Basic</li>
+                </ul>
+            </Paper>
+            <Paper className={classes.paperinpaper} elevation={6} style={{width: 350}}>
+            <h4>Software</h4>
+            <ul>
+                <li>Microsoft Office Suite</li>
+                <ul>
+                    <li>Word</li>
+                    <li>Powerpoint</li>
+                    <li>Excel</li>
+                </ul>
+                <li>Adobe Suite</li>
+                <ul>
+                    <li>Illustrator</li>
+                    <li>Photoshop</li>
+                    <li>Premiere</li>
+                </ul>
+                <li>GitHub</li>
+            </ul>
+        </Paper>
+            <Paper className={classes.paperinpaper} elevation={6} style={{width: 350}}>
+                <h4>Operating Systems</h4>
+                <ul>
+                    <li>Windows 10</li>
+                    <li>MacOS</li>
+                    <li>Linux (Ubuntu)</li>
+                </ul>
+            </Paper>
+            <Paper className={classes.paperinpaper} elevation={6} style={{width: 350}}>
+                <h4>IDE's</h4>
+                <ul>
+                    <li>WebStorm</li>
+                    <li>Codepen</li>
+                    <li>Brackets</li>
+                    <li>Visual Studio Code</li>
+                </ul>
+            </Paper>
+        </Paper>
             <Paper className={classes.cardpaper}>
                 <h3>
                     Work Experience
@@ -174,64 +211,12 @@ export default function Resume() {
                     </div>
                 </Paper>
             </Paper>
-            <div style={{display: "flex", flexWrap: "flexWrap"}}>
-               <Paper className={classes.cardpaper} style={{width: "50%"}}>
-                   <h3>
-                       Skills
-                   </h3>
-                   <Paper className={classes.paperinpaper} elevation={6}>
-                       <h4>Programming Languages</h4>
-                       <ul>
-                           <li>JavaScript (JQuery, Vue)</li>
-                           <li>React, React Native</li>
-                           <li>HTML</li>
-                           <li>CSS</li>
-                           <li>Java</li>
-                           <li>C++</li>
-                           <li>Visual Basic</li>
-                       </ul>
-                   </Paper>
-                   <Paper className={classes.paperinpaper} elevation={6}>
-                       <h4>Operating Systems</h4>
-                       <ul>
-                           <li>Windows 10</li>
-                           <li>MacOS</li>
-                           <li>Linux (Ubuntu)</li>
-                       </ul>
-                   </Paper>
-                   <Paper className={classes.paperinpaper} elevation={6}>
-                       <h4>Software</h4>
-                       <ul>
-                           <li>Microsoft Office Suite</li>
-                           <ul>
-                               <li>Word</li>
-                               <li>Powerpoint</li>
-                               <li>Excel</li>
-                           </ul>
-                           <li>Adobe Suite</li>
-                           <ul>
-                               <li>Illustrator</li>
-                               <li>Photoshop</li>
-                               <li>Premiere</li>
-                           </ul>
-                           <li>GitHub</li>
-                       </ul>
-                   </Paper>
-                   <Paper className={classes.paperinpaper} elevation={6}>
-                       <h4>IDE's</h4>
-                       <ul>
-                           <li>WebStorm</li>
-                           <li>Codepen</li>
-                           <li>Brackets</li>
-                           <li>Visual Studio Code</li>
-                       </ul>
-                   </Paper>
-               </Paper>
-                   <Paper className={classes.cardpaper} style={{width: "100%"}} elevation={6}>
-                       <h3>
+            <div style={{display: "flex", flexWrap: "wrap", justifyContent: "space-around"}}>
+                   <Paper className={classes.cardpaper} elevation={6} style={{display: "flex", flexWrap: "wrap", justifyContent: "space-around"}}>
+                       <h3 style={{width: "100%"}}>
                            Activites
                        </h3>
-                       <Paper className={classes.paperinpaper} elevation={6}>
+                       <Paper className={classes.paperinpaper} style={{width:"44%"}} elevation={6}>
                            <h4>Ultimate Frisbee</h4>
                            <p>Club Vice President</p>
                            <img
@@ -239,28 +224,12 @@ export default function Resume() {
                                src={UltTeam}
                            />
                        </Paper>
-                       <Paper className={classes.paperinpaper} elevation={6}>
+                       <Paper className={classes.paperinpaper} style={{width:"44%"}} elevation={6}>
                            <h4>Marching Band</h4>
                            <p>Percussion: Bass Line & Quads</p>
-                           <div style={{display: "flex", flexWrap: "wrap",  justifyContent: "space-around", marginBottom: 5}}>
-                               <img
-                                   style={{height: 175,
-                                       borderRadius: 5,
-                                       border: "5px solid #37474f",
-                                       justifyContent: "center"}}
-                                   src={BassPic}
-                               />
-                               <img
-                                   style={{height: 175,
-                                       borderRadius: 5,
-                                       border: "5px solid #37474f",
-                                       justifyContent: "center"}}
-                                   src={BaseLine}
-                               />
-                           </div>
                            <img
                                className={classes.imgInCard}
-                               src={QuadLin}
+                               src={BaseLine}
                            />
                        </Paper>
                        <Paper className={classes.paperinpaper} elevation={6}>
@@ -269,10 +238,6 @@ export default function Resume() {
                            <img
                                className={classes.imgInCard}
                                src={Paintball}
-                           />
-                           <img
-                               className={classes.imgInCard}
-                               src={PaintCover}
                            />
                        </Paper>
                    </Paper>
