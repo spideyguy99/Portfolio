@@ -57,30 +57,12 @@ export default function Resume() {
 
     return(
         <div>
-            <div style={{backgroundColor: "#212121", height: 20}}>
-            </div>
+            <div style={{backgroundColor: "#212121", height: 20}}/>
             <Paper className={classes.cardpaper} style={{width: "50%", margin: "0 auto", marginBottom: 20}} elevation={10}>
                 <div style={{display: "flex", flexWrap: "wrap", justifyContent: "space-around"}}>
                     <h1>
                         My Resume
                     </h1>
-                   <div style={{marginTop: 20}}>
-                       <IconButton aria-label="GitHub" href="https://www.instagram.com/https.noah99/" target={"_blank"}>
-                           <InstagramIcon style={{color: "#e8eaf6"}}/>
-                       </IconButton>
-
-                       <IconButton aria-label="GitHub" href="https://www.facebook.com/noah.furniss.73" target={"_blank"}>
-                           <FacebookIcon style={{color: "#e8eaf6"}}/>
-                       </IconButton>
-
-                       <IconButton aria-label="GitHub" href="https://www.linkedin.com/in/noah-furniss-61a682163/" target={"_blank"}>
-                           <LinkedInIcon style={{color: "#e8eaf6"}}/>
-                       </IconButton>
-
-                       <IconButton aria-label="GitHub" href="https://github.com/spideyguy99" target={"_blank"}>
-                           <GitHubIcon style={{color: "#e8eaf6"}}/>
-                       </IconButton>
-                   </div>
                 </div>
             </Paper>
             <Paper className={classes.cardpaper}>

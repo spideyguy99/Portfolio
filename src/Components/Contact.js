@@ -55,19 +55,11 @@ export default function Contact() {
         <div>
             <div style={{backgroundColor: "#212121", height: 20}}>
             </div>
-            <Paper className={classes.cardpaper} style={{margin: "0 auto", marginBottom: 20}} elevation={10}>
-                <h1>
-                    Contact Me
-                </h1>
-                <div style={{display: "flex"}}>
-                    <p>Or direct message me using these  </p>
-                    <ArrowForwardIcon style={{marginTop: 15, marginLeft: 3}}/>
-                    <IconButton aria-label="GitHub" href="https://www.instagram.com/https.noah99/" target={"_blank"}>
-                        <InstagramIcon style={{color: "#e8eaf6"}}/>
-                    </IconButton>
-                    <IconButton aria-label="GitHub" href="https://www.facebook.com/noah.furniss.73" target={"_blank"}>
-                        <FacebookIcon style={{color: "#e8eaf6"}}/>
-                    </IconButton>
+            <Paper className={classes.cardpaper} style={{width: "50%", margin: "0 auto", marginBottom: 20}} elevation={10}>
+                <div style={{display: "flex", flexWrap: "wrap", justifyContent: "space-around"}}>
+                    <h1>
+                        Contact Me
+                    </h1>
                 </div>
             </Paper>
 

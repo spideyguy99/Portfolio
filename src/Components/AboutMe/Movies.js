@@ -9,8 +9,12 @@ import Paper from "@material-ui/core/Paper";
 
 //page imports
 import MoviesList from "../Data/MoviesData";
+import clsx from "clsx";
+import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
+import IconButton from "@material-ui/core/IconButton";
+import Collapse from "@material-ui/core/Collapse";
 
-const useStyles = makeStyles({
+const useStyles = makeStyles(theme=>({
     root: {
         width: 250,
         minHeight: 250,
@@ -39,41 +43,67 @@ const useStyles = makeStyles({
         paddingLeft: 20,
         paddingBottom: 20
     },
-});
+    expand: {
+    transform: 'rotate(0deg)',
+        margin: '0 auto',
+        transition: theme.transitions.create('transform', {
+        duration: theme.transitions.duration.shortest,
+    }),
+}
+}));
 
 export default function MoviesCard() {
     const classes = useStyles();
+    const [expanded, setExpanded] = React.useState(false);
+
+    const handleExpandClick = () => {
+        setExpanded(!expanded);
+    };
 
     return (
         <div>
-            <Paper className={classes.cardpaper}>
-                <h2>My Favorite Shows!</h2>
-                A top 9 list of my favorite TV Shows! Click the Card to view the IMBD page!
+            <Paper className={classes.cardpaper} style={{display: "flex"}}>
+                <div style={{width: "100%"}}>
+                    <h2>My Favorite Shows!</h2>
+                    A top 9 list of my favorite TV Shows! Click the Card to view the IMBD page!
+                </div>
+                <IconButton
+                    className={clsx(classes.expand, {
+                        [classes.expandOpen]: expanded,
+                    })}
+                    onClick={handleExpandClick}
+                    aria-expanded={expanded}
+                    aria-label="show more"
+                >
+                    <ExpandMoreIcon style={{fontSize: 75, color: "#eceff1", backgroundColor: "#37474f", borderRadius: 100}}/>
+                </IconButton>
             </Paper>
-            <div className={classes.card}>
-                {MoviesList.map(item => (
-                    <Card className={classes.root} elevation={0}>
-                        <CardActionArea  href={item.wiki} target={"_blank"}>
-                            <CardMedia
-                                className={classes.media}
-                                image={item.img}
-                                title={item.name}
-                            />
-                            <CardContent>
-                                <Typography gutterBottom variant="h5" component="h2">
-                                    {item.name}
-                                </Typography>
-                                <Typography variant="subtitle2" >
-                                    {item.genre}
-                                </Typography>
-                                <Typography variant="body2" component="p">
-                                    Directed By: {item.director}
-                                </Typography>
-                            </CardContent>
-                        </CardActionArea>
-                    </Card>
-                ))}
-            </div>
+            <Collapse in={expanded} timeout="auto" unmountOnExit>
+                <div className={classes.card}>
+                    {MoviesList.map(item => (
+                        <Card className={classes.root} elevation={0}>
+                            <CardActionArea  href={item.wiki} target={"_blank"}>
+                                <CardMedia
+                                    className={classes.media}
+                                    image={item.img}
+                                    title={item.name}
+                                />
+                                <CardContent>
+                                    <Typography gutterBottom variant="h5" component="h2">
+                                        {item.name}
+                                    </Typography>
+                                    <Typography variant="subtitle2" >
+                                        {item.genre}
+                                    </Typography>
+                                    <Typography variant="body2" component="p">
+                                        Directed By: {item.director}
+                                    </Typography>
+                                </CardContent>
+                            </CardActionArea>
+                        </Card>
+                    ))}
+                </div>
+            </Collapse>
         </div>
     );
 }

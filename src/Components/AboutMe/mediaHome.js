@@ -30,9 +30,13 @@ const useStyles = makeStyles(theme=>({
     cardpaper: {
         backgroundColor: "#37474f",
         color: "#eceff1",
-        minWidth: 250,
-        margin: 20,
-        padding: 8
+        marginLeft: 20,
+        marginRight: 20,
+        marginBottom: 20,
+        padding: 8,
+        paddingLeft: 20,
+        paddingRight: 20,
+        paddingBottom: 5
     },
     cardinpaper: {
         backgroundColor: "#37474f",
@@ -45,13 +49,10 @@ const useStyles = makeStyles(theme=>({
         display: "flex",
         justifyContent: "space-around",
     },
-    large: {
-        width: theme.spacing(15),
-        height: theme.spacing(15),
-    },
     mediaholder: {
         paddingTop: 10,
         margin: 20,
+        paddingBottom: 10,
         backgroundColor: "#37474f"
     }
 }));
@@ -63,12 +64,11 @@ export default function MediaCard() {
 
     return (
         <div>
-            <Carousel/>
-            <Paper className={classes.welcomepaper} elevation={5}>
-                <Avatar alt="Portrait" src={portrait} className={classes.large}/>
-                <div>
+            <div style={{backgroundColor: "#212121", height: 20}}/>
+            <Paper className={classes.cardpaper} style={{width: "50%", margin: "0 auto", marginBottom: 20}} elevation={10}>
+                <div style={{display: "flex", flexWrap: "wrap", justifyContent: "space-around"}}>
                     <h1>
-                        My name is Noah!
+                        About Me
                     </h1>
                 </div>
             </Paper>
@@ -101,16 +101,6 @@ export default function MediaCard() {
                     </Button>
                 </Paper>
             </div>
-            <Paper className={classes.cardpaper} >
-                <h3>What is this website for?</h3>
-                <div>
-                    <ul>
-                        <li>My portfolio is meant to give you both a look into my personal, and professional life.</li>
-                        <li>In the navigation above you can find links to my Resume, some of my relavant course work, and a contact form if you like what you see!</li>
-                        <li>Links to all of my social media are in the footer, and on my Resume page.</li>
-                    </ul>
-                </div>
-            </Paper>
             <Paper className={classes.mediaholder} elevation={10}>
                 <Music/>
             </Paper>

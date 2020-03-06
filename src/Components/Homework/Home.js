@@ -22,6 +22,17 @@ const useStyles = makeStyles(theme =>({
         paddingLeft: 20,
         paddingBottom: 20
     },
+    welcomePaper: {
+        backgroundColor: "#37474f",
+        color: "#eceff1",
+        marginLeft: 20,
+        marginRight: 20,
+        marginBottom: 20,
+        padding: 8,
+        paddingLeft: 20,
+        paddingRight: 20,
+        paddingBottom: 5
+    },
 }));
 
 export default function Home () {
@@ -34,9 +45,14 @@ export default function Home () {
 
     return(
         <div>
-            <div style={{backgroundColor: "#212121", height: 20}}>
-
-            </div>
+            <div style={{backgroundColor: "#212121", height: 20}}/>
+            <Paper className={classes.welcomePaper} style={{width: "50%", margin: "0 auto", marginBottom: 20}} elevation={10}>
+                <div style={{display: "flex", flexWrap: "wrap", justifyContent: "space-around"}}>
+                    <h1>
+                        Relevant Work
+                    </h1>
+                </div>
+            </Paper>
             <Paper className={classes.cardpaper}>
                 <h2>Homework from CIT 41300 - Advanced Commercial Web Development</h2>
                 All homeworks are posted to GitHub, and available to access through Netlify.

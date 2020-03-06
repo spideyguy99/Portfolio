@@ -28,6 +28,7 @@ import Movies from "./Components/AboutMe/Movies";
 import Games from "./Components/AboutMe/Games";
 import mediaHome from "./Components/AboutMe/mediaHome";
 import Contact from "./Components/Contact";
+import Home from './Components/Home';
 
 const useStyles = makeStyles(theme => ({
     root: {
@@ -43,7 +44,11 @@ const useStyles = makeStyles(theme => ({
         flexGrow: 1,
     },
     appbar: {
-        backgroundColor: "#263238"
+        backgroundColor: "#263238",
+        top: 0,
+        zIndex: 99,
+        position: "fixed",
+        width: "100%"
     },
     footercontainer: {
         backgroundColor: "#263238",
@@ -75,7 +80,7 @@ function App() {
                               </Link>
                           </Typography>
 
-                          <Link to={"/"} style={{textDecoration: "none"}}>
+                          <Link to={"/about"} style={{textDecoration: "none"}}>
                               <Button variant={"contained"} className={classes.menuButton}>
                                   About Me
                               </Button>
@@ -101,12 +106,10 @@ function App() {
                       </Toolbar>
                   </AppBar>
               </nav>
-              <Container maxWidth={"md"} style={{ backgroundColor: "#212121", minHeight: '90vh', paddingBottom: 20 }}>
+              <Container maxWidth={"md"} style={{ backgroundColor: "#212121", minHeight: '90vh', paddingBottom: 20, paddingTop: 65 }}>
                   <Switch>
-                      <Route path={"/"}  exact component={mediaHome} />
-                      <Route path={"/music"} component={Music} />
-                      <Route path={"/movies"} component={Movies} />
-                      <Route path={"/games"} component={Games} />
+                      <Route path={"/"}  exact component={Home} />
+                      <Route path={"/about"} component={mediaHome}/>
                       <Route path={"/resume"} component={Resume} />
                       <Route path={"/homework"} component={Homework} />
                       <Route path={"/contact_me"} component={Contact} />
