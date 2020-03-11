@@ -1,11 +1,6 @@
 import React from "react";
 import Paper from '@material-ui/core/Paper';
 import {makeStyles} from "@material-ui/core/styles";
-import IconButton from "@material-ui/core/IconButton";
-import InstagramIcon from "@material-ui/icons/Instagram";
-import FacebookIcon from "@material-ui/icons/Facebook";
-import LinkedInIcon from "@material-ui/icons/LinkedIn";
-import GitHubIcon from "@material-ui/icons/GitHub";
 
 const useStyles = makeStyles(theme =>({
     cardpaper: {

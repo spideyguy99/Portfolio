@@ -80,6 +80,12 @@ function App() {
                               </Link>
                           </Typography>
 
+                          <Link to={"/"} style={{textDecoration: "none"}}>
+                              <Button variant={"contained"} className={classes.menuButton}>
+                                  Home
+                              </Button>
+                          </Link>
+
                           <Link to={"/about"} style={{textDecoration: "none"}}>
                               <Button variant={"contained"} className={classes.menuButton}>
                                   About Me
@@ -98,15 +104,15 @@ function App() {
                               </Button>
                           </Link>
 
-                          <Link to={"/contact_me"} style={{textDecoration: "none"}}>
-                              <Button variant={"contained"} className={classes.menuButton}>
-                                  Contact Me
-                              </Button>
-                          </Link>
+                          {/*<Link to={"/contact_me"} style={{textDecoration: "none"}}>*/}
+                          {/*    <Button variant={"contained"} className={classes.menuButton}>*/}
+                          {/*        Contact Me*/}
+                          {/*    </Button>*/}
+                          {/*</Link>*/}
                       </Toolbar>
                   </AppBar>
               </nav>
-              <Container maxWidth={"md"} style={{ backgroundColor: "#212121", minHeight: '90vh', paddingBottom: 20, paddingTop: 65 }}>
+              <Container maxWidth={"md"} style={{ backgroundColor: "#212121", minHeight: '95vh', paddingBottom: 20, paddingTop: 65 }}>
                   <Switch>
                       <Route path={"/"}  exact component={Home} />
                       <Route path={"/about"} component={mediaHome}/>

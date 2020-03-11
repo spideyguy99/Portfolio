@@ -39,7 +39,7 @@ export default function Home(){
                     <div>
                         <ul>
                             <li>My portfolio is meant to give you both a look into my personal, and professional life.</li>
-                            <li>In the navigation above you can find links to my Resume, some of my relevant course work, and a contact form if you like what you see!</li>
+                            <li>In the navigation above you can find links to my Resume, and some of my relevant course work.</li>
                             <li>Links to all of my social media are in the footer.</li>
                         </ul>
                     </div>
