@@ -21,7 +21,7 @@ import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import Container from '@material-ui/core/Container';
 
 //page imports
-import Resume from "./Components/Resume";
+import Resume from "./Components/ResumeDir/Resume";
 import Homework from "./Components/Homework/Home";
 import Music from "./Components/AboutMe/Music";
 import Movies from "./Components/AboutMe/Movies";
@@ -125,9 +125,9 @@ function App() {
           <div className={classes.footercontainer}>
               <Container className={classes.footer} maxWidth={"md"}>
                   <div style={{width: "70%"}}>
-                      <Link to={"/contact_me"} style={{textDecoration: "none", color: "white"}}>
-                          Contact Me!
-                      </Link>
+                      {/*<Link to={"/contact_me"} style={{textDecoration: "none", color: "white"}}>*/}
+                      {/*    Contact Me!*/}
+                      {/*</Link>*/}
                   </div>
                   <div style={{marginTop: 15}}>
                       Follow Me!

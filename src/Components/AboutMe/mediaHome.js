@@ -65,7 +65,7 @@ export default function MediaCard() {
     return (
         <div>
             <div style={{backgroundColor: "#212121", height: 20}}/>
-            <Paper className={classes.cardpaper} style={{width: "50%", margin: "0 auto", marginBottom: 20}} elevation={10}>
+            <Paper className={classes.cardpaper} style={{width: "50%", margin: "0 auto"}} elevation={10}>
                 <div style={{display: "flex", flexWrap: "wrap", justifyContent: "space-around"}}>
                     <h1>
                         About Me

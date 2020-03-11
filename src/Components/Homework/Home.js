@@ -39,10 +39,6 @@ export default function Home () {
 
     const classes = useStyles();
 
-    let homework = Homework413.map((hmk, idx)=>
-        <Homework name={hmk.name} url={hmk.url} sub={hmk.subHead}/>
-    );
-
     return(
         <div>
             <div style={{backgroundColor: "#212121", height: 20}}/>
@@ -58,7 +54,7 @@ export default function Home () {
                 All homeworks are posted to GitHub, and available to access through Netlify.
             </Paper>
             <div style={{display: "flex", flexWrap: "wrap", justifyContent: "space-around"}}>
-                {homework}
+                <Homework/>
             </div>
             <Paper className={classes.cardpaper} style={{display: "flex"}}>
                 <div style={{width: "85%"}}>

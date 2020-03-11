@@ -1,11 +1,15 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
+import CardMedia from '@material-ui/core/CardMedia';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import Link from '@material-ui/core/Link';
+import GamesList from "../Data/GamesData";
+import CardActionArea from "@material-ui/core/CardActionArea";
+import HomeworkList from "../Data/HomeworkData";
 
 const useStyles = makeStyles(theme =>({
     card: {
@@ -17,7 +21,6 @@ const useStyles = makeStyles(theme =>({
         marginBottom: 20,
         marginLeft: 20,
         marginRight: 20,
-        maxWidth: 175,
     },
     action: {
         display: "flex",
@@ -27,6 +30,10 @@ const useStyles = makeStyles(theme =>({
         display: 'flex',
         flexWrap: "wrap",
     },
+    media: {
+        height: 200,
+        width: 350
+    },
 }));
 
 export default function Homework(props) {
@@ -34,23 +41,25 @@ export default function Homework(props) {
 
     return (
         <div className={classes.root}>
-            <Card className={classes.card} elevation={4}>
-                <CardContent>
-                    <Typography variant="h5">
-                        {props.name}
-                    </Typography>
-                    <Typography variant="body2" component="p">
-                        {props.sub}
-                    </Typography>
-                </CardContent>
-                <CardActions className={classes.action}>
-                    <Link href={props.url} target={"_blank"}>
-                        <Button size="small" variant={"contained"} style={{backgroundColor:"#546e7a", color: "#eceff1"}}>
-                            View on Netlify
-                        </Button>
-                    </Link>
-                </CardActions>
-            </Card>
+            {HomeworkList.map(item => (
+                <Card className={classes.card} elevation={0}>
+                    <CardActionArea href={item.url} target={"_blank"}>
+                        <CardMedia
+                            className={classes.media}
+                            image={item.img}
+                            title={item.name}
+                        />
+                        <CardContent>
+                            <Typography gutterBottom variant="h5" component="h2" >
+                                {item.name}
+                            </Typography>
+                            <Typography gutterBottom>
+                                {item.subHead}
+                            </Typography>
+                        </CardContent>
+                    </CardActionArea>
+                </Card>
+            ))}
         </div>
     );
 }
