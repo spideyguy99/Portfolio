@@ -18,9 +18,8 @@ const useStyles = makeStyles(theme =>({
         justifyContent: "space-around",
         backgroundColor:"#37474f",
         color: "#eceff1",
+        margin: "0 auto",
         marginBottom: 20,
-        marginLeft: 20,
-        marginRight: 20,
     },
     action: {
         display: "flex",

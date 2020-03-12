@@ -2,7 +2,8 @@ import React from "react";
 
 import home3 from '../Images/reduxActions.png';
 import home4 from '../Images/loadingAndSorting.png';
-import home5 from '../Images/relationalDatabase.png'
+import home5 from '../Images/relationalDatabase.png';
+import reduxPractice from '../Images/reduxPractice.png';
 
 let Homework413 = [
     {
@@ -23,6 +24,12 @@ let Homework413 = [
         subHead: "Homework 5 - CIT 41300",
         url: "https://nostalgic-heyrovsky-a3ccc8.netlify.com/",
         img: home5
+    },{
+        id:"4",
+        name: "Redux Practice",
+        subHead: "In Class Practice - CIT 41300",
+        url: "https://laughing-murdock-a901a9.netlify.com/",
+        img: reduxPractice
     }
 ];
 
