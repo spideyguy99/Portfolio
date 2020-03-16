@@ -30,8 +30,11 @@ const useStyles = makeStyles(theme =>({
         flexWrap: "wrap",
     },
     media: {
-        height: 200,
-        width: 350
+        width: 435,
+        height: 300
+    },
+    expandOpen: {
+        transform: 'rotate(180deg)',
     },
 }));
 

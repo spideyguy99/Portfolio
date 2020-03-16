@@ -46,30 +46,10 @@ export default function Resume() {
                     To constantly expand my knowledge and proficiency with any and all tools that allow me to create and maintain professional websites.
                 </p>
             </Paper>
-            <Paper className={classes.cardpaper}>
-                <h3 style={{width: "100%"}}>
-                    Skills
-                </h3>
-                <Skills/>
-            </Paper>
-            <Paper className={classes.cardpaper}>
-                <h3>
-                    Work Experience
-                </h3>
-                <WorkExp/>
-            </Paper>
-            <Paper className={classes.cardpaper}>
-                <h3>
-                    Education
-                </h3>
-                <Education/>
-            </Paper>
-           <Paper className={classes.cardpaper} elevation={6}>
-               <h3 style={{width: "100%"}}>
-                   Activities
-               </h3>
-               <Activities/>
-           </Paper>
+            <Skills/>
+            <WorkExp/>
+            <Education/>
+            <Activities/>
         </div>
     );
 }

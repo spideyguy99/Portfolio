@@ -44,12 +44,15 @@ const useStyles = makeStyles(theme=>({
         paddingBottom: 20
     },
     expand: {
-    transform: 'rotate(0deg)',
+        transform: 'rotate(0deg)',
         margin: '0 auto',
         transition: theme.transitions.create('transform', {
         duration: theme.transitions.duration.shortest,
     }),
-}
+},
+    expandOpen: {
+        transform: 'rotate(180deg)',
+    },
 }));
 
 export default function MoviesCard() {
@@ -75,7 +78,7 @@ export default function MoviesCard() {
                     aria-expanded={expanded}
                     aria-label="show more"
                 >
-                    <ExpandMoreIcon style={{fontSize: 75, color: "#eceff1", backgroundColor: "#37474f", borderRadius: 100}}/>
+                    <ExpandMoreIcon style={{fontSize: 75, color: "#eceff1", backgroundColor: "#78909c", borderRadius: 100}}/>
                 </IconButton>
             </Paper>
             <Collapse in={expanded} timeout="auto" unmountOnExit>
