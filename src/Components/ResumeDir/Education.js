@@ -12,12 +12,8 @@ const useStyles = makeStyles(theme =>({
     paperinpaper: {
         backgroundColor: "#546e7a",
         color: "#eceff1",
-        paddingLeft: 12,
-        paddingRight: 12,
         paddingTop: 1,
         paddingBottom: 12,
-        marginLeft: 10,
-        marginRight: 10,
         marginBottom: 20,
     },
     imgInCard: {
@@ -83,7 +79,7 @@ export default function Education() {
                 <div/>
                 <Collapse in={expanded} timeout="auto" unmountOnExi>
                         <Paper className={classes.paperinpaper} elevation={6} style={{display: "flex"}}>
-                            <div style={{width: "100%", margin: 20}}>
+                            <div style={{width: 600, margin: 20}}>
                                 <h4>
                                     Indiana University Purdue University Indianapolis - IUPUI
                                 </h4>
